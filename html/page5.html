@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="sass/main.scss" />
     <script src="https://kit.fontawesome.com/6d387303c3.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
 </head>
@@ -13,105 +14,107 @@
 <body>
     <header>
         <div>
-            <div><i class="fas fa-arrow-left"></i></div>
-            <div><img src="../images/logo/ohmyfood@2x.svg" alt="photologo" /></div>
+            <i class="fas fa-arrow-left"></i>
+            <img src="../images/logo/ohmyfood@2x.svg" alt="photologo" />
         </div>
-        <div><img src="../images/restaurants/Le_delice_des_sens.jpg" alt="Photo_restaurant4" /></div>
+        <img src="../images/restaurants/Le_delice_des_sens.jpg" alt="Photo_restaurant4" />
     </header>
-    <Main>
+    <main>
         <section>
             <div>
                 <h1>Le délice des sens</h1>
-                <div><i class="far fa-heart"></i></div>
+                <i class="far fa-heart"></i>
             </div>
             <h2>Entrées</h2>
+
             <div>
                 <div>
                     <h3>Tartare de thon</h3>
                     <p>Assaisonné au yuzu</p>
                 </div>
-                <div>25€</div>
+                <p>25€</p>
             </div>
             <div>
                 <div>
                     <h3>Bouchée de homard croustillant</h3>
                     <p>Et sa farandole de petits légumes</p>
                 </div>
-                <div>35€</div>
+                <p>35€</p>
             </div>
             <div>
                 <div>
                     <h3>Vélouté de cèpes</h3>
                     <p>Aux truffes</p>
                 </div>
-                <div>20€</div>
+                <p>20€</p>
             </div>
         </section>
         <section>
             <h2>Plats</h2>
+
             <div>
                 <div>
                     <h3>Poulet rôti aux herbes de provence</h3>
                     <p>Et sa crème de truffe</p>
                 </div>
-                <div>40€</div>
+                <p>40€</p>
             </div>
             <div>
                 <div>
                     <h3>Langoustine rôtie</h3>
                     <p>Et ses légumes de saison</p>
                 </div>
-                <div>35€</div>
+                <p>35€</p>
             </div>
             <div>
                 <div>
                     <h3>Côte de boeuf angus</h3>
                     <p>Et sa purée de panais</p>
                 </div>
-                <div>44€</div>
+                <p>44€</p>
             </div>
         </section>
         <section>
             <h2>Desserts</h2>
+
             <div>
                 <div>
                     <h3>Farandole de desserts</h3>
                     <p>Du chef</p>
                 </div>
-                <div>18€</div>
+                <p>18€</p>
             </div>
             <div>
                 <div>
                     <h3>Crème brûlée</h3>
                     <p>Revisitée</p>
                 </div>
-                <div>22€</div>
+                <p>22€</p>
             </div>
             <div>
                 <div>
                     <h3>Tiramisu</h3>
                     <p>À la noisette</p>
                 </div>
-                <div>23€</div>
+                <p>23€</p>
             </div>
+            <form method="post" action="php.traitement">
+                <p><input type="submit" name="Commander" value="Commander" id="Commande" </p>
+            </form>
         </section>
-        <div>Commander</div>
-    </Main>
+    </main>
     <footer>
-        <div><img src="../images/logo/ohmyfood@2x.svg" alt="logofin" /></div>
+        <img src="../images/logo/ohmyfood@2x.svg" alt="logofin" />
         <a href="#">
-            <div>
-                <div><i class="fas fa-utensils"></i></div>
-                <p>Proposer un restaurant</p>
-            </div>
+            <i class="fas fa-utensils"></i>
+            <p>Proposer un restaurant</p>
         </a>
         <a href="#">
-            <div>
-                <div><i class="fas fa-hands-helping"></i></div>
-                <p>Devenir partenaire
-            </div>
-            <div><a href="#">Mentions légales</a></div>
-            <div><a href="#">Contact</a></div>
+            <i class="fas fa-hands-helping"></i>
+            <p>Devenir partenaire</p>
+        </a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Contact</a>
     </footer>
 </body>
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="sass/main.scss" />
     <script src="https://kit.fontawesome.com/6d387303c3.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
 </head>
@@ -14,10 +15,11 @@
     <header>
 
         <img src="images/logo/ohmyfood.png" alt="logo" />
-
         <div>
-            <div><i class="fas fa-map-marker-alt"></i></div>
-            <div></div>
+            <i class="fas fa-map-marker-alt"></i>
+            <form method="post" action="traitment.php">
+                <p><input type="text" name="city" id="city" placeholder="Paris, Belleville" size="20" /></p>
+            </form>
         </div>
         <div>
             <h1>Réservez le menu qui vous convient</h1>
@@ -33,18 +35,18 @@
                     <p>Choisissez un restaurant</p>
                 </a>
                 <a href="#">
-                    <div>
-                        <div>2</div>
-                        <div><i class="fas fa-list-ul"></i></div>
-                        <div>Composez votre menu</div>
-                    </div>
+
+                    <p>2</p>
+                    <i class="fas fa-list-ul"></i>
+                    <p>Composez votre menu</p>
+
                 </a>
                 <a href="#">
-                    <div>
-                        <div>3</div>
-                        <div><i class="fas fa-store"></i></div>
-                        <div>Dégustez au restaurant</div>
-                    </div>
+
+                    <p>3</p>
+                    <i class="fas fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+
                 </a>
             </nav>
         </div>
@@ -53,73 +55,69 @@
         <h2>Restaurants</h2>
 
         <a href="page2.html"></a>
+
         <div>
-            <div>
-                <div><img src="images/restaurants/La_palette_du_gout.jpg" alt="photorestaurant1" /></div>
-                <div>Nouveau</div>
-            </div>
-            <div>
-                <h3>La Palette du goût</h3>
-                <p>Ménilmontant</p>
-            </div>
-            <div><i class="far fa-heart"></i></div>
+            <img src="images/restaurants/La_palette_du_gout.jpg" alt="photorestaurant1" />
+            <p>Nouveau</p>
         </div>
+        <div>
+            <h3>La Palette du goût</h3>
+            <p>Ménilmontant</p>
+        </div>
+        <i class="far fa-heart"></i>
+
         </a>
 
         <a href="page3.html">
+
             <div>
-                <div>
-                    <div><img src="images/restaurants/La_note_enchantee.jpg" alt="photorestaurant2" /></div>
-                    <div>Nouveau</div>
-                </div>
-                <div>
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
-                </div>
-                <div><i class="far fa-heart"></i></div>
+                <img src="images/restaurants/La_note_enchantee.jpg" alt="photorestaurant2" />
+                <p>Nouveau</p>
             </div>
+            <div>
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+            </div>
+            <i class="far fa-heart"></i>
+
         </a>
 
         <a href="page4.html">
+
+            <img src="images/restaurants/A_la_française.jpg" alt="photorestaurant3" />
             <div>
-                <div><img src="images/restaurants/A_la_française.jpg" alt="photorestaurant3" /></div>
-                <div>
-                    <h3>À la française</h3>
-                    <p>Cité Rouge</p>
-                </div>
-                <div><i class="far fa-heart"></i></div>
+                <h3>À la française</h3>
+                <p>Cité Rouge</p>
             </div>
+            <i class="far fa-heart"></i>
+
         </a>
 
         <a href="page5.html">
-            <div>
-                <div>
-                    <div><img src="images/restaurants/Le_delice_des_sens.jpg" alt="photorestaurant4" /></div>
-                    <div>Nouveau</div>
-                </div>
-                <div>
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
-                </div>
-                <div><i class="far fa-heart"></i></div>
+
+            <img src="images/restaurants/Le_delice_des_sens.jpg" alt="photorestaurant4" />
+            <p>Nouveau</p>
             </div>
+            <div>
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+            </div>
+            <i class="far fa-heart"></i>
         </a>
     </main>
     <footer>
-        <div><img src="../P3_BOLENGE_CODE/images/logo/ohmyfood@2x.svg" alt="logofin" /></div>
+        <img src="../P3_BOLENGE_CODE/images/logo/ohmyfood@2x.svg" alt="logofin" />
+
         <a href="#">
-            <div>
-                <div><i class="fas fa-utensils"></i></div>
-                <p>Proposer un restaurant</p>
-            </div>
+            <i class="fas fa-utensils"></i>
+            <p>Proposer un restaurant</p>
         </a>
         <a href="#">
-            <div>
-                <div><i class="fas fa-hands-helping"></i></div>
-                <p>Devenir partenaire
-            </div>
-            <div><a href="#">Mentions légales</a></div>
-            <div><a href="#">Contact</a></div>
+            <i class="fas fa-hands-helping"></i>
+            <p>Devenir partenaire</p>
+        </a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Contact</a>
     </footer>
 </body>
 
