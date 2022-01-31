@@ -1,8 +1,17 @@
-@import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
+@import "./Utils/_variables";
+@import "./Utils/_functions";
+@import "./Utils/_mixins";
+@import "./Utils/_maps";
+@import "./Utils/_extensions";
 
-@import "./base/base";
-@import "./base/typography";
-@import "./Layouts/header"; 
+@import "./Base/_breakpoints";
+@import "./Base/_base";
+@import "./Base/_typography";
+@import "./Layouts/_header";
+@import "./layouts/_nav";
+@import "./layouts/_container";
+@import "./layouts/_main";
+@import "./layouts/_footer";
+@import "./Components/_input.scss";
+@import "./Components/_button.scss";
+@import "./Components/_circle.scss";

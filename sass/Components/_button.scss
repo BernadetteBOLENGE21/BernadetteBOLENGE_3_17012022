@@ -1,0 +1,10 @@
+#btn {
+  @include mobile {
+    border: 1px solid;
+    width: 168px;
+    padding: 12px;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 14px;
+    margin-top: 24px;
+  }
+}

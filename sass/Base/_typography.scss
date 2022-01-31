@@ -1,11 +1,46 @@
 body {
-    font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 h1 {
-    font-size: 20px; 
+  @include mobile {
+    @media only screen and (max-width: 767px) {
+      font-size: 20px;
+      font-weight: bold;
+      width: 202px;
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    @include mobile {
+      font-size: 16px;
+      font-weight: 100;
+      width: 300px;
+    }
+  }
 }
 
 h2 {
-    font-size:18px; 
+  @include mobile {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 0 30px 16px;
+  }
+}
+
+h3 {
+  @include mobile {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: $color-black;
+  }
+}
+
+a {
+  @include mobile {
+    text-decoration: none;
+    color: $color-black;
+  }
 }

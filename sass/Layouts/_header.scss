@@ -1,4 +1,49 @@
-header{
-    background-color:$color-dominant;
-    @include flexcolcenter; 
+.header {
+  @include flex;
+  &__heading {
+    @include mobile {
+      background-color: $color-dominant;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 248px;
+      align-items: center;
+      text-align: center;
+    }
+    p {
+      @include mobile {
+        font-size: 16px;
+        font-weight: 100;
+        width: 300px;
+      }
+    }
+  }
+  &__logo {
+    @include mobile {
+      background-color: $color-white;
+      border-bottom: 1px solid $color-accent;
+      text-align: center;
+    }
+  }
+  &__logo--size {
+    @include mobile {
+      width: 150px;
+      padding-top: $padding-top;
+      padding-bottom: $padding-bottom;
+    }
+  }
+  &__input {
+    @include mobile {
+      @include input;
+      height: 46px;
+      box-shadow: 1px 7px 5px 5px;
+    }
+  }
+  &__menu {
+    @include mobile {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

@@ -1,0 +1,17 @@
+.nav {
+  @include mobile {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__link {
+    @include mobile {
+      width: 344px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}

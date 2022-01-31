@@ -1,0 +1,33 @@
+.footer {
+  @include mobile {
+    @include flex;
+    background-color: $color-footer;
+    color: white;
+    height: 400px;
+  }
+  &__logo {
+    @include mobile {
+      width: 100px;
+      color: white;
+    }
+  }
+  &__nav {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      flex-direction: space-between;
+      height: 75%;
+    }
+  }
+  &__link--form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__link {
+    @include mobile {
+      width: 188px;
+      color: white;
+    }
+  }
+}

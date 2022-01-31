@@ -1,0 +1,9 @@
+.circle {
+  @include mobile {
+    position: absolute;
+    right: 0;
+    left: 24px;
+    @include circles;
+    font-size: 14px;
+  }
+}
