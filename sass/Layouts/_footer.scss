@@ -1,33 +1,42 @@
 .footer {
   @include mobile {
-    @include flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: $color-footer;
-    color: white;
-    height: 400px;
+    height: 180px;
   }
   &__logo {
     @include mobile {
-      width: 100px;
-      color: white;
+      width: 112px;
+      padding-left: 20px;
+      height: 33px;
+      padding-top: 25px;
     }
   }
   &__nav {
     @include mobile {
+      @include flex;
       display: flex;
+      justify-content: center;
       flex-direction: column;
-      flex-direction: space-between;
-      height: 75%;
     }
   }
-  &__link--form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+}
+
+.nav-link {
+  @include mobile {
+    color: white;
+    padding-left: 10px;
   }
-  &__link {
+  &--flex {
     @include mobile {
-      width: 188px;
-      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline;
+      color: $color-white;
+      padding-left: 20px;
     }
   }
 }

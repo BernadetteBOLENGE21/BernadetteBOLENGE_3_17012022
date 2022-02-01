@@ -5,13 +5,14 @@
 @import "./Utils/_extensions";
 
 @import "./Base/_breakpoints";
-@import "./Base/_base";
-@import "./Base/_typography";
-@import "./Layouts/_header";
-@import "./layouts/_nav";
-@import "./layouts/_container";
-@import "./layouts/_main";
-@import "./layouts/_footer";
+@import "./Base/_base.scss";
+@import "./Base/_typography.scss";
+@import "./Layouts/_header.scss";
+@import "./layouts/_nav.scss";
+@import "./layouts/_container.scss";
+@import "./layouts/_main.scss";
+@import "./layouts/_photo.scss";
+@import "./layouts/_footer.scss";
 @import "./Components/_input.scss";
 @import "./Components/_button.scss";
 @import "./Components/_circle.scss";

@@ -1,0 +1,14 @@
+.photo {
+  @include mobile {
+    height: 58%;
+    display: flex;
+    flex-direction: column;
+
+    &__card {
+      @include mobile {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+}
