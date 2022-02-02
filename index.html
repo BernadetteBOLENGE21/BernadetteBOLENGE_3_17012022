@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="sass/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6d387303c3.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
 </head>
@@ -34,25 +37,31 @@
         <div class="header__menu">
             <h2>Fonctionnement</h2>
             <nav class="nav">
-                <a href="#" class="nav_link">
+                <a href="#">
+                    <div class="nav_link">
                     <p class="circle">1</p>
                     <div class="container">
                         <i class="fas fa-mobile-alt"></i>
                         <p class="container__choice">Choisissez un restaurant</p>
                     </div>
+                    </div>
                 </a>
-                <a href="#" class="nav_link">
+                <a href="#">
+                    <div class="nav_link">
                     <p class="circle">2</p>
                     <div class="container">
                         <i class="fas fa-list-ul"></i>
                         <p class="container__choice">Composez votre menu</p>
                     </div>
+                    </div>
                 </a>
-                <a href="#" class="nav_link">
+                <a href="#">
+                    <div class="nav_link">
                     <p class=circle>3</p>
                     <div class="container">
                         <i class="fas fa-store"></i>
                         <p class="container__choice">Dégustez au restaurant</p>
+                    </div>
                     </div>
                 </a>
             </nav>
@@ -61,15 +70,17 @@
     <main class="main">
         <h2>Restaurants</h2>
 
-        <a href="page2.html"></a>
+        <a href="page2.html">
         <div class="main__frame-card">
             <div class="photo">
                 <img src="images/restaurants/La_palette_du_gout.jpg" class="photo__card"alt="photorestaurant1" />
-                <p>Nouveau</p>
+                <p class="photo__nouveau">Nouveau</p>
             </div>
             <div class="presentation">
+                <div class="presentation__text">
                 <h3>La Palette du goût</h3>
                 <p>Ménilmontant</p>
+                </div>
                 <i class="far fa-heart"></i>
             </div>
         </div>
@@ -78,12 +89,14 @@
         <a href="page3.html">
             <div class="main__frame-card">
                 <div class="photo">
-                    <img src="images/restaurants/La_note_enchantee.jpg" alt="photorestaurant2" />
-                    <p>Nouveau</p>
+                    <img src="images/restaurants/La_note_enchantee.jpg" class="photo__card" alt="photorestaurant2" />
+                    <p class="photo__nouveau">Nouveau</p>
                 </div>
                 <div class="presentation">
+                    <div class="presentation__text">
                     <h3>La note enchantée</h3>
                     <p>Charonne</p>
+                    </div>
                     <i class="far fa-heart"></i>
                 </div>
             </div>
@@ -92,34 +105,35 @@
         <a href="page4.html">
             <div class="main__frame-card">
                 <div class="photo">
-                    <img src="images/restaurants/A_la_française.jpg" alt="photorestaurant3" />
+                    <img src="images/restaurants/A_la_française.jpg" class="photo__card" alt="photorestaurant3" />
                 </div>
                 <div class="presentation">
-                </div>
+                <div class="presentation__text">
                 <h3>À la française</h3>
                 <p>Cité Rouge</p>
+                </div>
                 <i class="far fa-heart"></i>
             </div>
-
             </div>
         </a>
 
         <a href="page5.html" class="card">
             <div class="main__frame-card">
                 <div class="photo">
-                    <img src="images/restaurants/Le_delice_des_sens.jpg" alt="photorestaurant4" />
-                    <p>Nouveau</p>
+                    <img src="images/restaurants/Le_delice_des_sens.jpg" class="photo__card" alt="photorestaurant4" />
                 </div>
                 <div class="presentation">
+                    <div class="presentation__text">
                     <h3>Le délice des sens</h3>
                     <p>Folie-Méricourt</p>
+                    </div>
                     <i class="far fa-heart"></i>
                 </div>
             </div>
         </a>
     </main>
     <footer class="footer">
-        <img src="images/logo/ohmyfood@2x.svg" class="footer__logo" color="white" alt="logofin" />
+        <p class="footer__logo">Ohmyfood</p>
         <div class="footer__nav">
             <a href="#" class="nav-link--flex">
                 <i class="fas fa-utensils"></i>

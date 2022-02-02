@@ -16,10 +16,19 @@
   background-color: $color-accent;
 }
 
-@mixin circles {
+@mixin circle($size) {
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  border: 1px solid;
+  height: $size;
+  width: $size;
+  border: 1px solid transparent;
   text-align: center;
+}
+
+@mixin button {
+  border: 1px solid transparent;
+  width: 168px;
+  padding: 12px;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 14px;
+  margin-top: 24px;
 }

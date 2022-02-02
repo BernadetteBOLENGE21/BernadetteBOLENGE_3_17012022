@@ -14,6 +14,7 @@ body {
     font-weight: bold;
     width: 202px;
     margin-bottom: 0;
+    padding-top: 24px;
   }
 }
 
@@ -29,7 +30,7 @@ body {
   h2 {
     font-size: 20px;
     font-weight: bold;
-    padding: 30px 0 30px 16px;
+    padding: 30px 0 15px 16px;
   }
 }
 
@@ -39,12 +40,13 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: #000000;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
   h4 {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 0;
     margin-left: 10px;
     margin-top: 10px;
@@ -88,7 +90,7 @@ h4 span {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    height: 248px;
+    height: 276px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -106,7 +108,7 @@ h4 span {
 
 @media screen and (max-width: 767px) {
   .header__logo {
-    background-color: #fff;
+    background-color: #F6F6F6;
     border-bottom: 1px solid #EAEAEA;
     text-align: center;
   }
@@ -137,14 +139,14 @@ h4 span {
             flex-direction: row;
     background-color: #EAEAEA;
     height: 46px;
-    -webkit-box-shadow: 1px 7px 5px 5px;
-            box-shadow: 1px 7px 5px 5px;
+    -webkit-box-shadow: 0px 6px 5px 6px grey;
+            box-shadow: 0px 6px 5px 6px grey;
   }
 }
 
 @media screen and (max-width: 767px) {
   .header__menu {
-    height: 400px;
+    height: 430px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -157,7 +159,7 @@ h4 span {
 
 @media screen and (max-width: 767px) {
   .nav {
-    height: 60%;
+    height: 57%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -172,8 +174,7 @@ h4 span {
 }
 
 @media screen and (max-width: 767px) {
-  .nav__link {
-    width: 344px;
+  .nav_link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -191,7 +192,7 @@ h4 span {
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 82%;
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -205,8 +206,10 @@ h4 span {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    border: 1px solid;
-    padding: 7px 18px 7px;
+    border: 1px solid transparent;
+    -webkit-box-shadow: 2px 4px 9px 2px #eaeaea;
+            box-shadow: 2px 4px 9px 2px #eaeaea;
+    padding: 10px 17px 12px;
     border-radius: 22px 22px 22px 22px;
     font-size: 14px;
     font-weight: bold;
@@ -230,7 +233,7 @@ h4 span {
 
 @media screen and (max-width: 767px) {
   .main {
-    height: 2000px;
+    height: 1446px;
     background-color: #f6f6f6;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -239,15 +242,15 @@ h4 span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
 @media screen and (max-width: 767px) {
   .main__frame-card {
-    border: 1px solid red;
+    border: 1px solid #EAEAEA;
     width: 88%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -260,27 +263,11 @@ h4 span {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-left: 15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .photo {
-    height: 58%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 767px) and (max-width: 767px) {
-  .photo__card {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
+    height: 301px;
+    margin-bottom: 24px;
+    border-radius: 22px 22px 22px 22px;
+    -webkit-box-shadow: 0px -1px 11px 0px gray;
+            box-shadow: 0px -1px 11px 0px gray;
   }
 }
 
@@ -303,10 +290,11 @@ h4 span {
 
 @media screen and (max-width: 767px) {
   .footer__logo {
-    width: 112px;
+    font-family: "Shrikhand", cursive;
+    color: white;
     padding-left: 20px;
     height: 33px;
-    padding-top: 25px;
+    padding-top: 5px;
   }
 }
 
@@ -327,6 +315,7 @@ h4 span {
         -ms-flex-pack: center;
             justify-content: center;
     flex-direction: column;
+    height: 38%;
   }
 }
 
@@ -358,36 +347,100 @@ h4 span {
 }
 
 @media screen and (max-width: 767px) {
+  .photo {
+    height: 69%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .photo__card {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 22px 22px 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo__nouveau {
+    position: absolute;
+    left: 240px;
+    top: 12px;
+    border: 1px solid #99e2d0;
+    background-color: #99e2d0;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #008766;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .presentation {
+    height: 44%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .presentation__text {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   #input {
     border-color: transparent;
     background-color: #EAEAEA;
     height: 20px;
     padding-left: 16px;
+    color: #000000;
   }
 }
 
 @media screen and (max-width: 767px) {
   #btn {
-    border: 1px solid;
+    border: 1px solid transparent;
     width: 168px;
     padding: 12px;
     border-radius: 20px 20px 20px 20px;
     font-size: 14px;
     margin-top: 24px;
+    background-color: #FF79DA;
+    color: #fff;
   }
 }
 
 @media screen and (max-width: 767px) {
   .circle {
-    position: absolute;
-    right: 0;
-    left: 10px;
     border-radius: 50%;
     height: 20px;
     width: 20px;
-    border: 1px solid;
+    border: 1px solid transparent;
     text-align: center;
     font-size: 14px;
+    background-color: #9356DC;
+    color: #fff;
+    margin-left: 10px;
+    position: absolute;
+    left: 4px;
   }
 }
 /*# sourceMappingURL=main.css.map */

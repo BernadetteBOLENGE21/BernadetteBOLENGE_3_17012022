@@ -1,9 +1,11 @@
 .circle {
   @include mobile {
-    position: absolute;
-    right: 0;
-    left: 10px;
-    @include circles;
+    @include circle(20px);
     font-size: 14px;
+    background-color: $color-primary;
+    color: $color-white;
+    margin-left: 10px;
+    position: absolute;
+    left: 4px;
   }
 }
