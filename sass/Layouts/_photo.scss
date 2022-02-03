@@ -15,13 +15,14 @@
     }
     &__nouveau {
       position: absolute;
-      left: 240px;
+      left: 78%;
       top: 12px;
       border: 1px solid #99e2d0;
       background-color: #99e2d0;
       padding: 5px 10px;
       font-size: 13px;
       color: #008766;
+      border-radius: 2px;
     }
   }
 }
@@ -36,6 +37,19 @@
   &__text {
     @include mobile {
       padding-left: 10px;
+    }
+  }
+
+  p {
+    @include mobile {
+      margin-top: 6px;
+    }
+  }
+  i {
+    @include mobile {
+      font-size: 22px;
+      padding-top: 25px;
+      width: 12%;
     }
   }
 }
