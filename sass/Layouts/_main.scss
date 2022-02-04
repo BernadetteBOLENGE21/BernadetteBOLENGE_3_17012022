@@ -19,4 +19,70 @@
       box-shadow: 0px -1px 11px 0px gray;
     }
   }
+  /* Cette partie correspond aux élements de la balise main de la page 2 à la page 5*/
+  &.main_next_page {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 1400px;
+      border-radius: 50px 50px 0 0px;
+    }
+  }
+  &__title {
+    @include mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+      font-family: "Shrikhand", cursive;
+    }
+  }
+  .section {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      background-color: $color-dominant;
+      height: 500px;
+    }
+    &__composition {
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+      }
+      .composition__rectangle {
+        @include mobile {
+          height: 4px;
+          width: 46px;
+          background-color: $color-tertiary;
+          margin-left: 28px;
+        }
+      }
+    }
+
+    h2 {
+      @include mobile {
+        font-size: 18px;
+        margin-bottom: 0;
+        padding-bottom: 7px;
+      }
+    }
+
+    &__bloc {
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 16px;
+        height: 68%;
+      }
+    }
+  }
+  form {
+    @include mobile {
+      text-align: center;
+      padding-bottom: 45px;
+    }
+  }
 }

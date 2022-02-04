@@ -32,6 +32,7 @@
       padding-bottom: $padding-bottom;
     }
   }
+
   &__input {
     @include mobile {
       @include input;
@@ -44,6 +45,17 @@
       height: 430px;
       display: flex;
       flex-direction: column;
+    }
+  }
+  /* Cette partie correspond aux éléments du header de la page 2 à la page 5*/
+  &__logo2 {
+    @include mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 62px;
+      align-items: center;
+      background-color: $color-dominant;
     }
   }
 }

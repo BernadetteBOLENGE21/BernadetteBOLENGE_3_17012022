@@ -24,4 +24,23 @@
       padding-left: 20px;
     }
   }
+
+  &.container_next_page {
+    @include mobile {
+      border: 1px solid transparent;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      height: 58px;
+      background-color: $color-white;
+      width: 88%;
+    }
+
+    p {
+      @include mobile {
+        margin-top: 6px;
+      }
+    }
+  }
 }
