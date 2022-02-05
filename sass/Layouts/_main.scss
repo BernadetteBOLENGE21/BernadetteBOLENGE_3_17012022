@@ -25,8 +25,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 1400px;
+      height: 1286px;
       border-radius: 50px 50px 0 0px;
+      font-size: 29px;
     }
   }
   &__title {
@@ -37,26 +38,34 @@
       align-items: baseline;
       font-family: "Shrikhand", cursive;
     }
+    .title {
+      @include mobile {
+        font-size: 29px;
+        width: 83%;
+        margin-bottom: 0;
+        padding-top: 14px;
+      }
+    }
   }
   .section {
     @include mobile {
       display: flex;
       flex-direction: column;
       background-color: $color-dominant;
-      height: 500px;
+      height: 28%;
     }
     &__composition {
       @include mobile {
         display: flex;
         flex-direction: column;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
       }
       .composition__rectangle {
         @include mobile {
           height: 4px;
           width: 46px;
           background-color: $color-tertiary;
-          margin-left: 28px;
+          margin-left: 16px;
         }
       }
     }
@@ -66,6 +75,7 @@
         font-size: 18px;
         margin-bottom: 0;
         padding-bottom: 7px;
+        padding-left: 16px;
       }
     }
 
@@ -74,15 +84,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-left: 16px;
-        height: 68%;
+        margin-left: 10px;
+        height: 79%;
       }
     }
   }
   form {
     @include mobile {
       text-align: center;
-      padding-bottom: 45px;
+      padding-bottom: 32px;
     }
   }
 }

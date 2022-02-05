@@ -24,10 +24,10 @@
   text-align: center;
 }
 
-@mixin button {
-  border: 1px solid transparent;
+@mixin button($border, $padding) {
+  border: $border;
   width: 168px;
-  padding: 12px;
+  padding: $padding;
   border-radius: 20px 20px 20px 20px;
   font-size: 14px;
   margin-top: 24px;

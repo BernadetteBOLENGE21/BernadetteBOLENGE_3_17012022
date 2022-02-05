@@ -1,6 +1,6 @@
 #btn {
   @include mobile {
-    @include button;
+    @include button(1px solid transparent, 12px);
     background-color: $color-secondary;
     color: $color-white;
   }
@@ -8,10 +8,15 @@
 
 .commander {
   @include mobile {
-    @include button;
-    background-color: $color-secondary;
+    @include button(1px solid $color-accent, 14px);
+    background-image: linear-gradient(
+      to bottom right,
+      $color-secondary,
+      $color-primary
+    );
     color: $color-white;
     font-size: 16px;
     font-weight: 500;
+    box-shadow: -5px 6px 9px 3px #e1dbdb;
   }
 }

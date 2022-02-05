@@ -27,14 +27,16 @@
 
   &.container_next_page {
     @include mobile {
-      border: 1px solid transparent;
+      border: 1px solid #f6f6f6;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: baseline;
-      height: 58px;
+      height: 63px;
       background-color: $color-white;
       width: 88%;
+      padding-top: 0px;
+      box-shadow: -5px 6px 9px $color-dominant;
     }
 
     p {
