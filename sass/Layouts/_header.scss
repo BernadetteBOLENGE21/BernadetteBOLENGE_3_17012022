@@ -1,5 +1,6 @@
 .header {
   @include flex;
+  background-color: $color-dominant;
   &__heading {
     @include mobile {
       background-color: $color-dominant;
@@ -56,8 +57,42 @@
       height: 62px;
       align-items: center;
       background-color: $color-dominant;
-      padding-left: 30px;
-      padding-right: 107px;
+      padding-left: 16%;
+      padding-right: 37%;
+    }
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      padding-left: 100px;
+      align-items: center;
+      padding-right: 272px;
+      background-color: $color-dominant;
+    }
+
+    .logo2 {
+      @include mobile {
+        width: 180px;
+      }
+      @include tablet {
+        height: 38px;
+        padding-top: 10px;
+      }
+    }
+
+    i {
+      @include mobile {
+        font-size: 18px;
+      }
+      @include tablet {
+        font-size: 22px;
+      }
+    }
+  }
+  &__photoresto {
+    @include mobile {
+      height: 284px;
+      object-fit: cover;
     }
   }
 }

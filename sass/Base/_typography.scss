@@ -38,6 +38,9 @@ h3 {
     color: $color-black;
     margin-bottom: 0;
   }
+  @include tablet {
+    font-size: 17px;
+  }
 }
 
 h4 {
@@ -49,12 +52,21 @@ h4 {
   }
 
   span {
-    padding-left: 8px;
+    @include mobile {
+      padding-left: 8px;
+    }
+    @include tablet {
+      padding-left: 20px;
+    }
   }
 }
 
 a {
   @include mobile {
+    text-decoration: none;
+    color: $color-black;
+  }
+  @include tablet {
     text-decoration: none;
     color: $color-black;
   }

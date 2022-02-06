@@ -1,7 +1,8 @@
+/*Début de l'implémentation des boutons version mobile*/
 #btn {
   @include mobile {
     @include button(1px solid transparent, 12px);
-    background-color: $color-secondary;
+    @include degraded;
     color: $color-white;
   }
 }
@@ -9,14 +10,20 @@
 .commander {
   @include mobile {
     @include button(1px solid $color-accent, 14px);
-    background-image: linear-gradient(
-      to bottom right,
-      $color-secondary,
-      $color-primary
-    );
+    @include degraded;
     color: $color-white;
     font-size: 16px;
     font-weight: 500;
     box-shadow: -5px 6px 9px 3px #e1dbdb;
+  }
+  @include tablet {
+    @include button(1px solid $color-accent, 14px);
+    @include degraded;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: -5px 6px 9px 3px #e1dbdb;
+    margin-bottom: 50px;
+    margin-top: 36px;
   }
 }

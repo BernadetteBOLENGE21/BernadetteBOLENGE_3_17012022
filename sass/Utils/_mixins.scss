@@ -32,3 +32,7 @@
   font-size: 14px;
   margin-top: 24px;
 }
+
+@mixin degraded {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+}

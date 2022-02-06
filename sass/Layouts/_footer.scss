@@ -6,8 +6,21 @@
     background-color: $color-footer;
     height: 180px;
   }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: $color-footer;
+  }
   &__logo {
     @include mobile {
+      font-family: "Shrikhand", cursive;
+      color: white;
+      padding-left: 20px;
+      height: 33px;
+      padding-top: 5px;
+    }
+    @include tablet {
       font-family: "Shrikhand", cursive;
       color: white;
       padding-left: 20px;
@@ -23,6 +36,12 @@
       flex-direction: column;
       height: 38%;
     }
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 38%;
+    }
   }
 }
 
@@ -31,8 +50,20 @@
     color: white;
     padding-left: 10px;
   }
+  @include tablet {
+    color: white;
+    padding-left: 10px;
+  }
   &--flex {
     @include mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline;
+      color: $color-white;
+      padding-left: 20px;
+    }
+    @include tablet {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
