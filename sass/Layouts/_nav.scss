@@ -5,8 +5,39 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  @include tablet {
+    height: 57%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @include desktop {
+    height: 57%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @include desktop {
+    width: 107%;
+    height: 57%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   &_link {
     @include mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    @include desktop {
       display: flex;
       flex-direction: row;
       justify-content: space-around;

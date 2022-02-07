@@ -5,6 +5,16 @@
     @include degraded;
     color: $color-white;
   }
+  @include tablet {
+    @include button(1px solid transparent, 12px);
+    @include degraded;
+    color: $color-white;
+  }
+  @include desktop {
+    @include button(1px solid transparent, 12px);
+    @include degraded;
+    color: $color-white;
+  }
 }
 
 .commander {
@@ -16,7 +26,18 @@
     font-weight: 500;
     box-shadow: -5px 6px 9px 3px #e1dbdb;
   }
+
   @include tablet {
+    @include button(1px solid $color-accent, 14px);
+    @include degraded;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: -5px 6px 9px 3px #e1dbdb;
+    margin-bottom: 50px;
+    margin-top: 36px;
+  }
+  @include desktop {
     @include button(1px solid $color-accent, 14px);
     @include degraded;
     color: $color-white;

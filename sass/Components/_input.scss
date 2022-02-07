@@ -6,4 +6,18 @@
     padding-left: 16px;
     color: $color-black;
   }
+  @include tablet {
+    border-color: transparent;
+    background-color: $color-accent;
+    height: 20px;
+    padding-left: 16px;
+    color: $color-black;
+  }
+  @include desktop {
+    border-color: transparent;
+    background-color: $color-accent;
+    height: 20px;
+    padding-left: 16px;
+    color: $color-black;
+  }
 }

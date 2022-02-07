@@ -6,6 +6,24 @@
     color: $color-white;
     margin-left: 10px;
     position: absolute;
+    left: 2%;
+  }
+  @include tablet {
+    @include circle(20px);
+    font-size: 14px;
+    background-color: $color-primary;
+    color: $color-white;
+    margin-left: 10px;
+    position: absolute;
     left: 5%;
+  }
+  @include desktop {
+    @include circle(20px);
+    font-size: 14px;
+    background-color: $color-primary;
+    color: $color-white;
+    margin-left: 10px;
+    position: absolute;
+    left: 8%;
   }
 }

@@ -11,6 +11,14 @@
     flex-direction: column;
     justify-content: flex-start;
     background-color: $color-footer;
+    height: 300px;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: $color-footer;
+    height: 300px;
   }
   &__logo {
     @include mobile {
@@ -24,8 +32,17 @@
       font-family: "Shrikhand", cursive;
       color: white;
       padding-left: 20px;
-      height: 33px;
+      height: 17px;
       padding-top: 5px;
+      font-size: 20px;
+    }
+    @include desktop {
+      font-family: "Shrikhand", cursive;
+      color: white;
+      padding-left: 20px;
+      height: 17px;
+      padding-top: 5px;
+      font-size: 20px;
     }
   }
   &__nav {
@@ -38,9 +55,17 @@
     }
     @include tablet {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       flex-direction: column;
-      height: 38%;
+      height: 64%;
+      padding-top: 10px;
+    }
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 64%;
+      padding-top: 10px;
     }
   }
 }
@@ -52,7 +77,11 @@
   }
   @include tablet {
     color: white;
-    padding-left: 10px;
+    padding-left: 20px;
+  }
+  @include desktop {
+    color: white;
+    padding-left: 20px;
   }
   &--flex {
     @include mobile {
@@ -70,6 +99,22 @@
       align-items: baseline;
       color: $color-white;
       padding-left: 20px;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline;
+      color: $color-white;
+      padding-left: 20px;
+    }
+    i {
+      @include tablet {
+        padding-right: 20px;
+      }
+      @include desktop {
+        padding-right: 20px;
+      }
     }
   }
 }
