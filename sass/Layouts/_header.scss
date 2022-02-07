@@ -94,5 +94,9 @@
       height: 284px;
       object-fit: cover;
     }
+    @include tablet {
+      height: 460px;
+      object-fit: cover;
+    }
   }
 }

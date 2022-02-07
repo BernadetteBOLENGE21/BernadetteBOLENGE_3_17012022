@@ -7,21 +7,35 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   body {
-    height: 2450px;
+    height: 1982px;
   }
 }
 
-body {
-  font-family: Roboto, sans-serif;
+@media screen and (max-width: 767px) {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
 }
 
-@media only screen and (max-width: 767px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+@media screen and (max-width: 767px) {
   h1 {
     font-size: 20px;
     font-weight: bold;
     width: 202px;
     margin-bottom: 0;
     padding-top: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-family: "Roboto", sans-serif;
   }
 }
 
@@ -54,6 +68,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   h3 {
     font-size: 17px;
+    margin-bottom: 6px;
   }
 }
 
@@ -260,6 +275,14 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header__photoresto {
+    height: 460px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .nav {
     height: 57%;
@@ -346,12 +369,12 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     height: 63px;
     background-color: #fff;
-    width: 88%;
+    width: 89%;
     padding-top: 0px;
     -webkit-box-shadow: -5px 6px 9px #F6F6F6;
             box-shadow: -5px 6px 9px #F6F6F6;
@@ -398,6 +421,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container.container_next_page p {
+    margin-top: 6px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .container.container_next_page .prix {
     font-weight: bold;
@@ -407,6 +436,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .container.container_next_page .prix {
+    font-weight: bold;
     padding-right: 10px;
   }
 }
@@ -493,7 +523,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .main.main_next_page {
-    height: 59%;
+    height: 70%;
     background-color: #f6f6f6;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -527,7 +557,7 @@ body {
     font-family: "Shrikhand", cursive;
     background-color: #F6F6F6;
     border-radius: 50px 50px 0 0;
-    margin-top: -47px;
+    margin-top: 8px;
     background-color: #F6F6F6;
   }
 }
@@ -551,15 +581,25 @@ body {
     height: 6%;
     background-color: #F6F6F6;
     border-radius: 60px 60px 0 0;
+    margin-top: -47px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .main__title .title {
-    font-size: 29px;
+    font-family: "Shrikhand";
+    font-size: 28px;
     width: 83%;
     margin-bottom: 0;
     padding-top: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main__title .title {
+    font-family: "Shrikhand";
+    width: 68%;
+    font-size: 28px;
   }
 }
 
@@ -587,10 +627,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding-left: 10px;
+    background-color: #F6F6F6;
   }
 }
 
@@ -609,7 +650,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .main .section__composition {
-    height: 16%;
+    height: 19%;
   }
 }
 
@@ -645,8 +686,9 @@ body {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .main .section h2 {
     font-family: Roboto;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 100;
+    margin-bottom: 10px;
   }
 }
 

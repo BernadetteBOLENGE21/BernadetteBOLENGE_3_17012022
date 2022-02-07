@@ -1,16 +1,22 @@
 body {
-  font-family: Roboto, sans-serif;
+  @include mobile {
+    font-family: "Roboto", sans-serif;
+  }
+  @include tablet {
+    font-family: "Roboto", sans-serif;
+  }
 }
 
 h1 {
   @include mobile {
-    @media only screen and (max-width: 767px) {
-      font-size: 20px;
-      font-weight: bold;
-      width: 202px;
-      margin-bottom: 0;
-      padding-top: 24px;
-    }
+    font-size: 20px;
+    font-weight: bold;
+    width: 202px;
+    margin-bottom: 0;
+    padding-top: 24px;
+  }
+  @include tablet {
+    font-family: "Roboto", sans-serif;
   }
 
   p {
@@ -40,6 +46,7 @@ h3 {
   }
   @include tablet {
     font-size: 17px;
+    margin-bottom: 6px;
   }
 }
 
