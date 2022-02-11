@@ -134,7 +134,7 @@
       align-items: center;
       background-color: $color-dominant;
       padding-left: 14%;
-      padding-right: 36%;
+      padding-right: 28%;
     }
     @include tablet {
       display: flex;
@@ -149,7 +149,7 @@
     @include desktop {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       height: 70px;
       background-color: $color-dominant;
@@ -163,13 +163,11 @@
         height: 38px;
         padding-top: 10px;
       }
-      @include desktop {
-        padding-right: 40%;
-      }
     }
     i {
       @include mobile {
-        font-size: 18px;
+        font-size: 16px;
+        padding-right: 20px;
       }
       @include tablet {
         font-size: 22px;

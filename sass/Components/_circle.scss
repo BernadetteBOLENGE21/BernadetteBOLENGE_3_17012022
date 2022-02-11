@@ -6,7 +6,7 @@
     color: $color-white;
     margin-left: 10px;
     position: absolute;
-    left: 2%;
+    left: 6%;
   }
   @include tablet {
     @include circle(20px);
@@ -15,7 +15,7 @@
     color: $color-white;
     margin-left: 10px;
     position: absolute;
-    left: 5%;
+    left: 8%;
   }
   @include desktop {
     @include circle(20px);
@@ -24,6 +24,6 @@
     color: $color-white;
     margin-left: 10px;
     position: absolute;
-    left: 8%;
+    left: 9%;
   }
 }
