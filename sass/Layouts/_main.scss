@@ -19,6 +19,18 @@
     justify-content: space-between;
     background-color: $color-dominant;
   }
+  &__flex {
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .flex__bloc {
+      @include desktop {
+        width: 46%;
+      }
+    }
+  }
   &__frame-card {
     @include mobile {
       width: 88%;
@@ -32,7 +44,7 @@
       box-shadow: 0px -1px 11px 0px gray;
     }
     @include tablet {
-      width: 76%;
+      width: 84%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -60,7 +72,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 1500px;
+      height: 1360px;
       border-radius: 50px 50px 0 0px;
       font-size: 29px;
       margin-top: -27px;
@@ -118,24 +130,24 @@
       height: 6%;
       background-color: $color-dominant;
       border-radius: 74px 74px 0 0;
-      margin-top: -47px;
     }
     .title {
       @include mobile {
         font-family: "Shrikhand";
-        font-size: 28px;
-        width: 83%;
+        font-size: 32px;
+        width: 76%;
         margin-bottom: 0;
         padding-top: 14px;
       }
       @include tablet {
         font-family: "Shrikhand";
         width: 68%;
-        font-size: 28px;
+        font-size: 32px;
       }
       @include desktop {
         font-family: "Shrikhand";
-        font-size: 28px;
+        font-size: 32px;
+        width: 64%;
       }
     }
     i {
@@ -150,10 +162,10 @@
       display: flex;
       flex-direction: column;
       background-color: $color-dominant;
-      height: 36%;
+      height: 30%;
     }
     @include tablet {
-      height: 29%;
+      height: 27%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -235,7 +247,7 @@
         flex-direction: column;
         justify-content: space-between;
         margin-left: 10px;
-        height: 63%;
+        height: 74%;
       }
       @include tablet {
         height: 79%;
@@ -244,7 +256,7 @@
         justify-content: space-between;
       }
       @include desktop {
-        height: 64%;
+        height: 69%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

@@ -85,6 +85,12 @@ h3 {
     font-size: 17px;
     margin: 0;
   }
+
+  p {
+    @include desktop {
+      font-weight: 100;
+    }
+  }
 }
 
 h4 {

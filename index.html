@@ -4,15 +4,18 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../sass/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">        
     <script src="https://kit.fontawesome.com/6d387303c3.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
 </head>
@@ -39,29 +42,29 @@
             <nav class="nav">
                 <a href="#">
                     <div class="nav_link">
-                    <p class="circle">1</p>
-                    <div class="container">
-                        <i class="fas fa-mobile-alt"></i>
-                        <p class="container__choice">Choisissez un restaurant</p>
-                    </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="nav_link">
-                    <p class="circle">2</p>
-                    <div class="container">
-                        <i class="fas fa-list-ul"></i>
-                        <p class="container__choice">Composez votre menu</p>
-                    </div>
+                        <p class="circle">1</p>
+                        <div class="container">
+                            <i class="fas fa-mobile-alt"></i>
+                            <p class="container__choice">Choisissez un restaurant</p>
+                        </div>
                     </div>
                 </a>
                 <a href="#">
                     <div class="nav_link">
-                    <p class=circle>3</p>
-                    <div class="container">
-                        <i class="fas fa-store"></i>
-                        <p class="container__choice">Dégustez au restaurant</p>
+                        <p class="circle">2</p>
+                        <div class="container">
+                            <i class="fas fa-list-ul"></i>
+                            <p class="container__choice">Composez votre menu</p>
+                        </div>
                     </div>
+                </a>
+                <a href="#">
+                    <div class="nav_link">
+                        <p class=circle>3</p>
+                        <div class="container">
+                            <i class="fas fa-store"></i>
+                            <p class="container__choice">Dégustez au restaurant</p>
+                        </div>
                     </div>
                 </a>
             </nav>
@@ -69,68 +72,73 @@
     </header>
     <main class="main">
         <h2>Restaurants</h2>
-
-        <a href="../P3_BOLENGE_CODE/html/page2.html">
-        <div class="main__frame-card">
-            <div class="photo">
-                <img src="images/restaurants/La_palette_du_gout.jpg" class="photo__card"alt="photorestaurant1" />
-                <p class="photo__nouveau">Nouveau</p>
-            </div>
-            <div class="presentation">
-                <div class="presentation__text">
-                <h3>La Palette du goût</h3>
-                <p>Ménilmontant</p>
-                </div>
-                <i class="far fa-heart"></i>
-            </div>
-        </div>
-        </a>
-
-        <a href="../P3_BOLENGE_CODE/html/page3.html">
-            <div class="main__frame-card">
-                <div class="photo">
-                    <img src="images/restaurants/La_note_enchantee.jpg" class="photo__card" alt="photorestaurant2" />
-                    <p class="photo__nouveau">Nouveau</p>
-                </div>
-                <div class="presentation">
-                    <div class="presentation__text">
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
+        <div class="main__flex">
+            <div class="flex__bloc">
+                <a href="../P3_BOLENGE_CODE/html/page2.html">
+                <div class="main__frame-card">
+                    <div class="photo">
+                        <img src="images/restaurants/La_palette_du_gout.jpg" class="photo__card"
+                            alt="photorestaurant1" />
+                        <p class="photo__nouveau">Nouveau</p>
                     </div>
-                    <i class="far fa-heart"></i>
-                </div>
-            </div>
-        </a>
-
-        <a href="../P3_BOLENGE_CODE/html/page4.html">
-            <div class="main__frame-card">
-                <div class="photo">
-                    <img src="images/restaurants/A_la_française.jpg" class="photo__card" alt="photorestaurant3" />
-                </div>
-                <div class="presentation">
-                <div class="presentation__text">
-                <h3>À la française</h3>
-                <p>Cité Rouge</p>
-                </div>
-                <i class="far fa-heart"></i>
-            </div>
-            </div>
-        </a>
-
-        <a href="../P3_BOLENGE_CODE/html/page5.html" class="card">
-            <div class="main__frame-card">
-                <div class="photo">
-                    <img src="images/restaurants/Le_delice_des_sens.jpg" class="photo__card" alt="photorestaurant4" />
-                </div>
-                <div class="presentation">
-                    <div class="presentation__text">
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
+                    <div class="presentation">
+                        <div class="presentation__text">
+                            <h3>La Palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <i class="far fa-heart"></i>
                     </div>
-                    <i class="far fa-heart"></i>
                 </div>
+                </a>
+                <a href="../P3_BOLENGE_CODE/html/page3.html">
+                    <div class="main__frame-card">
+                        <div class="photo">
+                            <img src="images/restaurants/La_note_enchantee.jpg" class="photo__card"
+                                alt="photorestaurant2" />
+                            <p class="photo__nouveau">Nouveau</p>
+                        </div>
+                        <div class="presentation">
+                            <div class="presentation__text">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </a>
+            <div class="flex__bloc">
+                <a href="../P3_BOLENGE_CODE/html/page4.html">
+                    <div class="main__frame-card">
+                        <div class="photo">
+                            <img src="images/restaurants/A_la_française.jpg" class="photo__card"
+                                alt="photorestaurant3" />
+                        </div>
+                        <div class="presentation">
+                            <div class="presentation__text">
+                                <h3>À la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="../P3_BOLENGE_CODE/html/page5.html" class="card">
+                    <div class="main__frame-card">
+                        <div class="photo">
+                            <img src="images/restaurants/Le_delice_des_sens.jpg" class="photo__card"
+                                alt="photorestaurant4" />
+                        </div>
+                        <div class="presentation">
+                            <div class="presentation__text">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
     </main>
     <footer class="footer">
         <p class="footer__logo">Ohmyfood</p>
@@ -143,8 +151,12 @@
                 <i class="fas fa-hands-helping"></i>
                 <h4>Devenir partenaire</h4>
             </a>
-            <a href="#" class="nav-link"><h4>Mentions légales</h4></a>
-            <a href="#" class="nav-link"><h4>Contact</h4></a>
+            <a href="#" class="nav-link">
+                <h4>Mentions légales</h4>
+            </a>
+            <a href="#" class="nav-link">
+                <h4>Contact</h4>
+            </a>
         </div>
     </footer>
 </body>
