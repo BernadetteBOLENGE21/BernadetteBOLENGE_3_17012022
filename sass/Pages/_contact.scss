@@ -1,0 +1,161 @@
+.body {
+  @include tablet {
+    height: none;
+  }
+  @include desktop {
+    height: none;
+  }
+}
+.conteneur {
+  @include mobile {
+    padding-bottom: 17px;
+  }
+  @include tablet {
+    padding-bottom: 17px;
+  }
+  @include desktop {
+    padding-bottom: 17px;
+  }
+  &__contact {
+    @include mobile {
+      text-align: center;
+      border: 1px solid #99e2d0;
+      width: 96%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      margin-top: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      border-radius: 18px;
+      color: white;
+      background-color: #99e2d0;
+      font-weight: bold;
+    }
+    @include tablet {
+      text-align: center;
+      border: 1px solid #99e2d0;
+      width: 96%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      margin-top: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      border-radius: 18px;
+      color: white;
+      background-color: #99e2d0;
+      font-weight: bold;
+    }
+    @include desktop {
+      text-align: center;
+      border: 1px solid #99e2d0;
+      width: 96%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      margin-top: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      border-radius: 18px;
+      color: white;
+      background-color: #99e2d0;
+      font-weight: bold;
+    }
+  }
+  &__label {
+    @include mobile {
+      padding-left: 10px;
+      font-weight: bold;
+      color: black;
+    }
+    @include tablet {
+      padding-left: 10px;
+      font-weight: bold;
+      color: black;
+    }
+    @include desktop {
+      padding-left: 10px;
+      font-weight: bold;
+      color: black;
+    }
+  }
+  &__input {
+    @include mobile {
+      height: 54px;
+      width: 96%;
+      margin-left: 5px;
+      margin-bottom: 20px;
+      border-radius: 18px;
+    }
+    @include tablet {
+      height: 54px;
+      width: 96%;
+      margin-left: 5px;
+      margin-bottom: 20px;
+      border-radius: 18px;
+    }
+    @include desktop {
+      height: 54px;
+      width: 96%;
+      margin-left: 5px;
+      margin-bottom: 20px;
+      border-radius: 18px;
+    }
+  }
+  #message {
+    @include mobile {
+      width: 96%;
+      margin-left: 6px;
+      margin-bottom: 20px;
+      border-radius: 18px;
+    }
+    @include tablet {
+      width: 96%;
+      margin-left: 6px;
+      margin-bottom: 20px;
+      border-radius: 18px;
+    }
+    @include desktop {
+      width: 96%;
+      margin-left: 6px;
+      margin-bottom: 20px;
+      border-radius: 18px;
+    }
+  }
+  #envoyer {
+    @include mobile {
+      @include degraded;
+      border-color: transparent;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    @include tablet {
+      @include degraded;
+      border-color: transparent;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    @include desktop {
+      @include degraded;
+      border-color: transparent;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}

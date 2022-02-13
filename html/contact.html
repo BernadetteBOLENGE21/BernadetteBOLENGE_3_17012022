@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../sass/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">        
+    <script src="https://kit.fontawesome.com/6d387303c3.js" crossorigin="anonymous"></script>
+    <title>Ohmyfood | Contact</title>
+    </head>
+        <body>
+            <header class="header">
+                <div class="header__logo">
+                    <img src="../images/logo/ohmyfood.png" class="header__logo--size" alt="logo" />
+                </div>
+            </header>
+            <main>
+                <div class="conteneur">
+                    <form method="post" action="traitement.php">
+                        <Legend class="conteneur__contact">Contact</Legend>
+                            <label for="nom" class="conteneur__label">Nom</label><br/>
+                            <input type="text" name="nom" id="nom" class="conteneur__input"/><br/>
+
+                            <label for="e-mail" class="conteneur__label">E-mail</label><br/>
+                            <input type="text" name="email" id="email" class="conteneur__input"/><br/>
+
+                            <label for="Message" class="conteneur__label">Message</label><br/>
+                            <textarea name="message" id="message" rows="15" cols="32"></textarea><br/>
+                            
+                            <input type="submit" value="Envoyer" class="conteneur__input" id="envoyer">
+
+                    </form>
+                </div>
+            </main>
+            <footer class="footer">
+                <p class="footer__logo">Ohmyfood</p>
+                <div class="footer__nav">
+                    <a href="#" class="nav-link--flex">
+                        <i class="fas fa-utensils"></i>
+                        <h4><span>Proposer un restaurant</span></h4>
+                    </a>
+                    <a href="#" class="nav-link--flex">
+                        <i class="fas fa-hands-helping"></i>
+                        <h4>Devenir partenaire</h4>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <h4>Mentions légales</h4>
+                    </a>
+                    <a href="./P3_BOLENGE_CODE/index.html" class="nav-link">
+                        <h4>Page d'accueil</h4>
+                    </a>
+                </div>
+            </footer>
+        </body>
+</html>
