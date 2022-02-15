@@ -26,13 +26,25 @@
 
 @mixin button($border, $padding) {
   border: $border;
-  width: 168px;
+  width: 190px;
   padding: $padding;
   border-radius: 20px 20px 20px 20px;
   font-size: 14px;
   margin-top: 24px;
+  font-weight: bold;
 }
 
 @mixin degraded {
-  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 121, 218),
+    rgb(146, 86, 220)
+  );
+  &:hover {
+    background-image: linear-gradient(
+      lighten(rgb(255, 121, 218), 5%) 0%,
+      lighten(rgb(146, 86, 220), 5%) 100%
+    );
+    box-shadow: 1px 3px 6px grey;
+  }
 }

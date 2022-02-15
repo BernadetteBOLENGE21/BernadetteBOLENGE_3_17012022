@@ -8,3 +8,18 @@
     height: 1800px;
   }
 }
+
+body {
+  @include mobile {
+    height: none;
+    margin: 0;
+  }
+  @include tablet {
+    height: none;
+    margin: 0;
+  }
+  @include desktop {
+    height: none;
+    margin: 0;
+  }
+}

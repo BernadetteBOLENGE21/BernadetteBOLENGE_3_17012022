@@ -1,11 +1,3 @@
-.body {
-  @include tablet {
-    height: none;
-  }
-  @include desktop {
-    height: none;
-  }
-}
 .conteneur {
   @include mobile {
     padding-bottom: 17px;
@@ -99,6 +91,8 @@
       margin-left: 5px;
       margin-bottom: 20px;
       border-radius: 18px;
+      appearance: none;
+      border: 1px solid #000;
     }
     @include tablet {
       height: 54px;
@@ -106,6 +100,8 @@
       margin-left: 5px;
       margin-bottom: 20px;
       border-radius: 18px;
+      appearance: none;
+      border: 1px solid #000;
     }
     @include desktop {
       height: 54px;
@@ -113,6 +109,8 @@
       margin-left: 5px;
       margin-bottom: 20px;
       border-radius: 18px;
+      appearance: none;
+      border: 1px solid #000;
     }
   }
   #message {

@@ -40,6 +40,10 @@
     font-weight: bold;
     background-color: $color-dominant;
   }
+  &:hover {
+    background: #e4d5f6;
+  }
+
   i {
     @include mobile {
       padding-left: 20px;

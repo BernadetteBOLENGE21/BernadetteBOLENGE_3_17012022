@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">        
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6d387303c3.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
 </head>
@@ -35,7 +35,9 @@
         <div class="header__heading">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, selectionnés par nos soins</p>
-            <p id="btn">Explorer nos restaurants</p>
+            <form method="post" action="traitement.ph">
+                <input type="submit" id="btn" class="btn" value="Explorer nos restaurants"></input>
+            </form>
         </div>
         <div class="header__menu">
             <h2>Fonctionnement</h2>
@@ -75,20 +77,23 @@
         <div class="main__flex">
             <div class="flex__bloc">
                 <a href="../P3_BOLENGE_CODE/html/page2.html">
-                <div class="main__frame-card">
-                    <div class="photo">
-                        <img src="images/restaurants/La_palette_du_gout.jpg" class="photo__card"
-                            alt="photorestaurant1" />
-                        <p class="photo__nouveau">Nouveau</p>
-                    </div>
-                    <div class="presentation">
-                        <div class="presentation__text">
-                            <h3>La Palette du goût</h3>
-                            <p>Ménilmontant</p>
+                    <div class="main__frame-card">
+                        <div class="photo">
+                            <img src="images/restaurants/La_palette_du_gout.jpg" class="photo__card"
+                                alt="photorestaurant1" />
+                            <p class="photo__nouveau">Nouveau</p>
                         </div>
-                        <i class="far fa-heart"></i>
+                        <div class="presentation">
+                            <div class="presentation__text">
+                                <h3>La Palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="presentation__icones">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
-                </div>
                 </a>
                 <a href="../P3_BOLENGE_CODE/html/page3.html">
                     <div class="main__frame-card">
@@ -102,7 +107,10 @@
                                 <h3>La note enchantée</h3>
                                 <p>Charonne</p>
                             </div>
-                            <i class="far fa-heart"></i>
+                            <div class="presentation__icones">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -119,7 +127,10 @@
                                 <h3>À la française</h3>
                                 <p>Cité Rouge</p>
                             </div>
-                            <i class="far fa-heart"></i>
+                            <div class="presentation__icones">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -134,7 +145,10 @@
                                 <h3>Le délice des sens</h3>
                                 <p>Folie-Méricourt</p>
                             </div>
-                            <i class="far fa-heart"></i>
+                            <div class="presentation__icones">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -160,4 +174,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -48,6 +48,7 @@
       font-size: 13px;
       color: #008766;
       border-radius: 2px;
+      font-weight: bold;
     }
     @include tablet {
       position: absolute;
@@ -59,6 +60,7 @@
       font-size: 13px;
       color: #008766;
       border-radius: 2px;
+      font-weight: bold;
     }
     @include desktop {
       position: absolute;
@@ -70,6 +72,7 @@
       font-size: 15px;
       color: #008766;
       border-radius: 2px;
+      font-weight: bold;
     }
   }
 }
@@ -103,6 +106,11 @@
       padding-left: 10px;
     }
   }
+  &__icones {
+    position: relative;
+    padding-right: 10px;
+    padding-top: 12px;
+  }
 
   p {
     @include mobile {
@@ -116,20 +124,30 @@
     }
   }
   i {
-    @include mobile {
-      font-size: 22px;
-      padding-top: 25px;
-      width: 12%;
-    }
-    @include tablet {
-      font-size: 22px;
-      padding-top: 25px;
-      width: 12%;
-    }
-    @include desktop {
-      font-size: 22px;
-      padding-top: 25px;
-      width: 12%;
+    font-size: 22px;
+    padding-top: 25px;
+    width: 12%;
+    &.fas {
+      opacity: 0;
+      position: absolute;
+      transform: scale(0);
+      background: linear-gradient(
+        to bottom right,
+        rgb(255, 121, 218),
+        rgb(146, 86, 220)
+      );
+      transform: scale(1);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      height: 24px;
+      width: 26px;
+      left: 0;
+      &:hover,
+      &:active {
+        transform: scale(1);
+        opacity: 1;
+        z-index: 2;
+      }
     }
   }
 }

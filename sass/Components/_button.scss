@@ -1,20 +1,9 @@
 /*Début de l'implémentation des boutons version mobile*/
 #btn {
-  @include mobile {
-    @include button(1px solid transparent, 12px);
-    @include degraded;
-    color: $color-white;
-  }
-  @include tablet {
-    @include button(1px solid transparent, 12px);
-    @include degraded;
-    color: $color-white;
-  }
-  @include desktop {
-    @include button(1px solid transparent, 12px);
-    @include degraded;
-    color: $color-white;
-  }
+  cursor: pointer;
+  @include button(1px solid transparent, 12px);
+  @include degraded;
+  color: $color-white;
 }
 
 .commander {
@@ -46,5 +35,11 @@
     box-shadow: -5px 6px 9px 3px #e1dbdb;
     margin-bottom: 50px;
     margin-top: 36px;
+  }
+}
+
+.btn:hover {
+  @include desktop {
+    color: red;
   }
 }
