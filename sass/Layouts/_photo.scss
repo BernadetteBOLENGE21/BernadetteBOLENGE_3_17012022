@@ -108,8 +108,10 @@
   }
   &__icones {
     position: relative;
-    padding-right: 10px;
-    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: center;
   }
 
   p {
@@ -125,26 +127,18 @@
   }
   i {
     font-size: 22px;
-    padding-top: 25px;
-    width: 12%;
     &.fas {
       opacity: 0;
       position: absolute;
-      transform: scale(0);
       background: linear-gradient(
         to bottom right,
         rgb(255, 121, 218),
         rgb(146, 86, 220)
       );
-      transform: scale(1);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
-      height: 24px;
-      width: 26px;
-      left: 0;
       &:hover,
       &:active {
-        transform: scale(1);
         opacity: 1;
         z-index: 2;
       }
