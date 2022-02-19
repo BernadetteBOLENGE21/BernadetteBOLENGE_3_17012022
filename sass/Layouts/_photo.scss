@@ -136,7 +136,7 @@
         rgb(146, 86, 220)
       );
       -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
+      background-clip: text;
       &:hover,
       &:active {
         opacity: 1;

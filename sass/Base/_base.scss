@@ -1,3 +1,4 @@
+// Règles générales applicables à toutes les pages du site
 .body {
   box-sizing: border-box;
   margin: 0;
@@ -21,5 +22,16 @@ body {
   @include desktop {
     height: none;
     margin: 0;
+  }
+}
+
+// keyframes à établir dans le fichier de base du fichier CSS
+
+@keyframes progress-validate {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
   }
 }

@@ -113,6 +113,15 @@
     border-radius: 22px;
     overflow: hidden;
   }
+  //hover du container
+  &:hover {
+    @include desktop {
+      & > .validate {
+        transform: scale(1);
+      }
+    }
+  }
+
   .detail_plat {
     @include mobile {
       display: flex;
@@ -191,68 +200,37 @@
       background-color: $color-tertiary;
     }
     @include desktop {
-      width: 114px;
+      width: 86px;
       height: 95px;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: $color-tertiary;
+      transform: scale(0);
+      transition: transform 3s ease-in-out;
+      transition-duration: 1s;
+      transform-origin: right;
     }
+
     .check {
-      @include mobile {
-        position: relative;
-        height: 28px;
-        width: 28px;
-        border-radius: 59%;
-        background-color: white;
-      }
-      @include tablet {
-        position: relative;
-        height: 33px;
-        width: 33px;
-        border-radius: 59%;
-        background-color: white;
-      }
-      @include desktop {
-        position: relative;
-        height: 33px;
-        width: 33px;
-        border-radius: 59%;
-        background-color: white;
-      }
+      position: relative;
+      @include circle(26px);
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     i {
       @include mobile {
-        right: -8px;
         position: absolute;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        border: 1 px solid transparent;
-        height: 100%;
-        width: 100%;
-        color: #99e2d0;
-        font-size: 14px;
-        top: 6px;
+        color: $color-tertiary;
       }
       @include tablet {
-        left: 10px;
-        top: 7px;
         position: absolute;
-        display: flex;
-        border: 1 px solid transparent;
-        height: 100%;
-        width: 100%;
         color: $color-tertiary;
       }
       @include desktop {
-        left: 10px;
-        top: 8px;
         position: absolute;
-        display: flex;
-        border: 1 px solid transparent;
-        height: 100%;
-        width: 100%;
         color: $color-tertiary;
       }
     }

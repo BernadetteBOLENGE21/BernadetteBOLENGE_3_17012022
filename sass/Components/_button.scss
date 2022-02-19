@@ -37,9 +37,3 @@
     margin-top: 36px;
   }
 }
-
-.btn:hover {
-  @include desktop {
-    color: red;
-  }
-}
