@@ -3,6 +3,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -57,6 +58,64 @@
   100% {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
@@ -247,6 +306,23 @@
     text-decoration: none;
     color: #000000;
   }
+}
+
+.chargement {
+  border: 10px solid transparent;
+  width: 100px;
+  height: 100px;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #99E2D0;
+  border-radius: 50%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 20%;
+  position: absolute;
+  -webkit-animation: fade-out 3s linear, spin 3s linear infinite;
+          animation: fade-out 3s linear, spin 3s linear infinite;
+  opacity: 0;
 }
 
 .header {
@@ -914,6 +990,7 @@
             box-shadow: 1px 8px 18px #EAEAEA;
     overflow: hidden;
     border-radius: 22px;
+    text-overflow: ellipsis;
   }
 }
 
@@ -936,6 +1013,7 @@
             box-shadow: 1px 8px 18px #EAEAEA;
     border-radius: 22px;
     overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -959,14 +1037,30 @@
             box-shadow: 1px 8px 18px #EAEAEA;
     border-radius: 22px;
     overflow: hidden;
+    cursor: pointer;
+    text-overflow: ellipsis;
   }
 }
 
-@media screen and (min-width: 992px) {
-  .container_next_page:hover > .validate {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+.container_next_page:hover {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.container_next_page:hover > .validate {
+  -webkit-transform: translate(1);
+          transform: translate(1);
+  width: 110px;
+}
+
+.container_next_page:hover > .fas {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.container_next_page:hover > .check {
+  left: 0px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1072,7 +1166,7 @@
 
 @media screen and (max-width: 767px) {
   .container_next_page .validate {
-    width: 95px;
+    width: 0px;
     height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1084,12 +1178,22 @@
         -ms-flex-align: center;
             align-items: center;
     background-color: #99e2d0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 400ms;
+            transition-duration: 400ms;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .container_next_page .validate {
-    width: 114px;
+    width: 0px;
     height: 95px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1101,12 +1205,22 @@
         -ms-flex-align: center;
             align-items: center;
     background-color: #99E2D0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 400ms;
+            transition-duration: 400ms;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 }
 
 @media screen and (min-width: 992px) {
   .container_next_page .validate {
-    width: 86px;
+    width: 0px;
     height: 95px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1118,20 +1232,20 @@
         -ms-flex-align: center;
             align-items: center;
     background-color: #99E2D0;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transition: -webkit-transform 3s ease-in-out;
-    transition: -webkit-transform 3s ease-in-out;
-    transition: transform 3s ease-in-out;
-    transition: transform 3s ease-in-out, -webkit-transform 3s ease-in-out;
-    -webkit-transition-duration: 1s;
-            transition-duration: 1s;
+    -webkit-transform: translate(0);
+            transform: translate(0);
     -webkit-transform-origin: right;
             transform-origin: right;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 400ms;
+            transition-duration: 400ms;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 }
 
-.container_next_page .validate .check {
+.container_next_page .check {
   position: relative;
   border-radius: 50%;
   height: 26px;
@@ -1148,34 +1262,45 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  left: 9px;
 }
 
 @media screen and (max-width: 767px) {
-  .container_next_page .validate i {
+  .container_next_page i {
     position: absolute;
     color: #99E2D0;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .container_next_page .validate i {
+  .container_next_page i {
     position: absolute;
     color: #99E2D0;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .container_next_page .validate i {
+  .container_next_page i {
     position: absolute;
     color: #99E2D0;
   }
 }
 
-/*Début de l'implementation du main*/
-.main {
-  /* Cette partie correspond aux élements de la balise main de la page 2 à la page 5*/
+.container_next_page i.fas {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition-property: -webkit-transform 1000ms;
+  transition-property: -webkit-transform 1000ms;
+  transition-property: transform 1000ms;
+  transition-property: transform 1000ms, -webkit-transform 1000ms;
+  -webkit-transition-delay: 150ms;
+          transition-delay: 150ms;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
+/*Début de l'implementation du main*/
 @media screen and (max-width: 767px) {
   .main {
     height: 1346px;
@@ -1464,8 +1589,45 @@
   }
 }
 
+.main__title .title__icones {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__title i.fas {
+  opacity: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9256dc));
+  background: linear-gradient(to bottom right, #ff79da, #9256dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-transition: -webkit-transform 1000ms 100ms ease-in-out;
+  transition: -webkit-transform 1000ms 100ms ease-in-out;
+  transition: transform 1000ms 100ms ease-in-out;
+  transition: transform 1000ms 100ms ease-in-out, -webkit-transform 1000ms 100ms ease-in-out;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+.main__title i.fas:hover, .main__title i.fas:active {
+  opacity: 1;
+  z-index: 2;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
 @media screen and (min-width: 992px) {
-  .main__title i {
+  .main__title i.fas {
     font-size: 26px;
     padding-left: 10%;
   }
@@ -1604,6 +1766,11 @@
     padding-bottom: 10px;
     padding-left: 10px;
   }
+}
+
+.main .section__bloc {
+  -webkit-animation: fade-in 5s ease-in-out;
+          animation: fade-in 5s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
@@ -2085,6 +2252,16 @@
 @media screen and (min-width: 992px) {
   .presentation__text {
     padding-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -2130,12 +2307,22 @@
   background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9256dc));
   background: linear-gradient(to bottom right, #ff79da, #9256dc);
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transition: -webkit-transform 1000ms 100ms ease-in-out;
+  transition: -webkit-transform 1000ms 100ms ease-in-out;
+  transition: transform 1000ms 100ms ease-in-out;
+  transition: transform 1000ms 100ms ease-in-out, -webkit-transform 1000ms 100ms ease-in-out;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
 }
 
 .presentation i.fas:hover, .presentation i.fas:active {
   opacity: 1;
   z-index: 2;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
 }
 
 @media screen and (max-width: 767px) {
@@ -2180,10 +2367,10 @@
   font-weight: bold;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9256dc));
   background-image: linear-gradient(to bottom right, #ff79da, #9256dc);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
   -webkit-transform: scale(1);
           transform: scale(1);
   color: #fff;
@@ -2209,10 +2396,10 @@
     font-weight: bold;
     background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9256dc));
     background-image: linear-gradient(to bottom right, #ff79da, #9256dc);
-    -webkit-transition: -webkit-transform 500ms ease-in-out;
-    transition: -webkit-transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+    -webkit-transition: -webkit-transform 700ms ease-in-out;
+    transition: -webkit-transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
     -webkit-transform: scale(1);
             transform: scale(1);
     color: #fff;
@@ -2242,10 +2429,10 @@
     font-weight: bold;
     background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9256dc));
     background-image: linear-gradient(to bottom right, #ff79da, #9256dc);
-    -webkit-transition: -webkit-transform 500ms ease-in-out;
-    transition: -webkit-transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+    -webkit-transition: -webkit-transform 700ms ease-in-out;
+    transition: -webkit-transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
     -webkit-transform: scale(1);
             transform: scale(1);
     color: #fff;
@@ -2277,10 +2464,10 @@
     font-weight: bold;
     background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9256dc));
     background-image: linear-gradient(to bottom right, #ff79da, #9256dc);
-    -webkit-transition: -webkit-transform 500ms ease-in-out;
-    transition: -webkit-transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+    -webkit-transition: -webkit-transform 700ms ease-in-out;
+    transition: -webkit-transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
     -webkit-transform: scale(1);
             transform: scale(1);
     color: #fff;
@@ -2551,10 +2738,10 @@
   .conteneur #envoyer {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9256dc));
     background-image: linear-gradient(to bottom right, #ff79da, #9256dc);
-    -webkit-transition: -webkit-transform 500ms ease-in-out;
-    transition: -webkit-transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+    -webkit-transition: -webkit-transform 700ms ease-in-out;
+    transition: -webkit-transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
     -webkit-transform: scale(1);
             transform: scale(1);
     border-color: transparent;
@@ -2576,10 +2763,10 @@
   .conteneur #envoyer {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9256dc));
     background-image: linear-gradient(to bottom right, #ff79da, #9256dc);
-    -webkit-transition: -webkit-transform 500ms ease-in-out;
-    transition: -webkit-transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+    -webkit-transition: -webkit-transform 700ms ease-in-out;
+    transition: -webkit-transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
     -webkit-transform: scale(1);
             transform: scale(1);
     border-color: transparent;
@@ -2601,10 +2788,10 @@
   .conteneur #envoyer {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9256dc));
     background-image: linear-gradient(to bottom right, #ff79da, #9256dc);
-    -webkit-transition: -webkit-transform 500ms ease-in-out;
-    transition: -webkit-transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out;
-    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+    -webkit-transition: -webkit-transform 700ms ease-in-out;
+    transition: -webkit-transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
     -webkit-transform: scale(1);
             transform: scale(1);
     border-color: transparent;

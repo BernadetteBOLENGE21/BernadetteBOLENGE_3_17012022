@@ -76,6 +76,7 @@
     }
   }
 }
+//Implémentation des éléments relatifs au container des pages 2 à 5
 .container_next_page {
   @include mobile {
     border: 1px solid #f6f6f6;
@@ -89,6 +90,7 @@
     box-shadow: 1px 8px 18px $color-accent;
     overflow: hidden;
     border-radius: 22px;
+    text-overflow: ellipsis;
   }
   @include tablet {
     border: 1px solid #f6f6f6;
@@ -100,6 +102,7 @@
     box-shadow: 1px 8px 18px $color-accent;
     border-radius: 22px;
     overflow: hidden;
+    text-overflow: ellipsis;
   }
   @include desktop {
     border: 1px solid #f6f6f6;
@@ -112,13 +115,24 @@
     box-shadow: 1px 8px 18px $color-accent;
     border-radius: 22px;
     overflow: hidden;
+    cursor: pointer;
+    text-overflow: ellipsis;
   }
-  //hover du container
+  //Animation au hover du container
   &:hover {
-    @include desktop {
-      & > .validate {
-        transform: scale(1);
-      }
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    & > .validate {
+      transform: translate(1);
+      width: 110px;
+    }
+
+    & > .fas {
+      transform: rotate(360deg);
+    }
+    & > .check {
+      left: 0px;
     }
   }
 
@@ -184,55 +198,73 @@
   }
   .validate {
     @include mobile {
-      width: 95px;
+      width: 0px;
       height: 80px;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: #99e2d0;
+      transform: translate(0);
+      transform-origin: right;
+      transition-property: all;
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     @include tablet {
-      width: 114px;
+      width: 0px;
       height: 95px;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: $color-tertiary;
+      transform: translate(0);
+      transform-origin: right;
+      transition-property: all;
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     @include desktop {
-      width: 86px;
+      width: 0px;
       height: 95px;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: $color-tertiary;
-      transform: scale(0);
-      transition: transform 3s ease-in-out;
-      transition-duration: 1s;
+      transform: translate(0);
       transform-origin: right;
+      transition-property: all;
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
-
-    .check {
-      position: relative;
-      @include circle(26px);
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  }
+  .check {
+    position: relative;
+    @include circle(26px);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 9px;
+  }
+  i {
+    @include mobile {
+      position: absolute;
+      color: $color-tertiary;
+      font-size: 14px;
     }
-    i {
-      @include mobile {
-        position: absolute;
-        color: $color-tertiary;
-      }
-      @include tablet {
-        position: absolute;
-        color: $color-tertiary;
-      }
-      @include desktop {
-        position: absolute;
-        color: $color-tertiary;
-      }
+    @include tablet {
+      position: absolute;
+      color: $color-tertiary;
+    }
+    @include desktop {
+      position: absolute;
+      color: $color-tertiary;
+    }
+    &.fas {
+      transform: rotate(-360deg);
+      transition-property: transform 1000ms;
+      transition-delay: 150ms;
+      transform-origin: center;
     }
   }
 }

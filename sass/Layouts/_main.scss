@@ -66,7 +66,7 @@
       box-shadow: 0px -1px 11px 0px gray;
     }
   }
-  /* Cette partie correspond aux élements de la balise main de la page 2 à la page 5*/
+  // Début du Main relatif aux pages 2 et 5
   &.main_next_page {
     @include mobile {
       display: flex;
@@ -150,10 +150,37 @@
         width: 64%;
       }
     }
+    .title__icones {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    //Animation du coeur à coté du titre principal de la page
     i {
-      @include desktop {
-        font-size: 26px;
-        padding-left: 10%;
+      &.fas {
+        opacity: 0;
+        position: absolute;
+        background: linear-gradient(
+          to bottom right,
+          rgb(255, 121, 218),
+          rgb(146, 86, 220)
+        );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: transform 1000ms 100ms ease-in-out;
+        transform-origin: bottom center;
+        &:hover,
+        &:active {
+          opacity: 1;
+          z-index: 2;
+          transform: scale(1.2);
+          transform-origin: center center;
+        }
+        @include desktop {
+          font-size: 26px;
+          padding-left: 10%;
+        }
       }
     }
   }
@@ -242,6 +269,7 @@
     }
 
     &__bloc {
+      animation: fade-in 5s ease-in-out;
       @include mobile {
         display: flex;
         flex-direction: column;

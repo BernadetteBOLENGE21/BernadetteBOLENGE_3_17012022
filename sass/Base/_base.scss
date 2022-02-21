@@ -2,6 +2,7 @@
 .body {
   box-sizing: border-box;
   margin: 0;
+  position: relative;
   @include tablet {
     height: 1982px;
   }
@@ -26,12 +27,38 @@ body {
 }
 
 // keyframes à établir dans le fichier de base du fichier CSS
-
 @keyframes progress-validate {
   0% {
     transform: scaleX(0);
   }
   100% {
     transform: scaleX(1);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
