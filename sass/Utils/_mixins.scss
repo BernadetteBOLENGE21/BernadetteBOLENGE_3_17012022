@@ -40,14 +40,9 @@
     rgb(255, 121, 218),
     rgb(146, 86, 220)
   );
-  transition: transform 700ms ease-in-out;
-  transform: scale(1);
   &:hover {
-    background-image: linear-gradient(
-      lighten(rgb(255, 121, 218), 5%),
-      lighten(rgb(146, 86, 220), 5%)
-    );
+    background-image: linear-gradient(rgb(255, 121, 218), rgb(146, 86, 220));
     box-shadow: 1px 3px 6px grey;
-    transform: scale(1.1);
+    filter: brightness(120%);
   }
 }

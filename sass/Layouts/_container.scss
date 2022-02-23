@@ -123,14 +123,14 @@
     & > .validate {
       transform: translate(1);
       width: 110px;
+      & > .check {
+        left: 0px;
+      }
+      & > .fas.fa-check {
+        animation: spin 2s;
+      }
     }
 
-    & > .fas {
-      transform: rotate(360deg);
-    }
-    & > .check {
-      left: 0px;
-    }
     & > .detail_plat {
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -262,10 +262,10 @@
       position: absolute;
       color: $color-tertiary;
     }
-    &.fas {
-      transform: rotate(-360deg);
-      transition-property: transform 1000ms;
-      transition-delay: 150ms;
+    .fas.fa-check {
+      transform: rotate(360deg);
+      transition-property: transform 300ms ease-in-out;
+      transition-delay: 300ms;
       transform-origin: center;
     }
   }

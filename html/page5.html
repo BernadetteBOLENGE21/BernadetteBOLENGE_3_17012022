@@ -20,10 +20,15 @@
     <title>Ohmyfood</title>
 </head>
 
-<body>
+<body class="body">
     <header class="header">
+        <div class="loader__conteneur">
+            <div class="chargement"></div>
+        </div>
         <div class="header__logo2">
+            <a href="../index.html">
             <i class="fas fa-arrow-left"></i>
+            </a>
             <img src="../images/logo/ohmyfood@2x.svg" class="logo2" alt="photologo" />
         </div>
         <img src="../images/restaurants/Le_delice_des_sens.jpg" class="header__photoresto" alt="Photo_restaurant1" />
@@ -31,7 +36,11 @@
     <main class="main main_next_page">
         <div class="main__title">
             <h1 class="title">Le délice des sens</h1>
-            <i class="far fa-heart"></i>
+            <div class="title__icones">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+            
         </div>
         <section class="section">
             <div class="section__composition">
@@ -39,26 +48,41 @@
             <div class="composition__rectangle"></div>
             </div>
             <div class="section__bloc">
-                <div class="container container_next_page">
-                    <div>
-                        <h3>Tartare de thon</h3>
-                        <p>Assaisonné au yuzu</p>
+                <a href="#" class="container_next_page">
+                    <div class="detail_plat">
+                        <div class="toto">
+                        <h3>Fricassée d'escargot</h3>
+                        <p>Au piment d'espelette</p>
+                        </div>
+                        <p class="prix">25€</p>
                     </div>
-                    <p class="prix">25€</p>
-                </div>
-                <div class="container container_next_page">
-                    <div>
-                        <h3>Bouchée de homard croustillant</h3>
-                        <p>Et sa farandole de petits légumes</p>
+                    <div class="validate">
+                        <div class="check"><i class="fas fa-check"></i></div>
                     </div>
+                </a>
+                <div class="container_next_page">
+                    <div class="detail_plat">
+                        <div class="toto">
+                        <h3>Foie gras de canard mi-cuit</h3>
+                        <p>Et ses copeaux de truffe noire</p>
+                        </div>
                     <p class="prix">35€</p>
-                </div>
-                <div class="container container_next_page">
-                    <div>
-                        <h3>Velouté de cèpes</h3>
-                        <p>Aux truffes</p>
                     </div>
+                    <div class="validate">
+                        <div class="check"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="container_next_page">
+                    <div class="detail_plat">
+                        <div class="toto">
+                        <h3>Oeuf au plat</h3>
+                        <p>Assaisonné à la truffe sur un lit de choux</p>
+                        </div>
                     <p class="prix">20€</p>
+                    </div>
+                    <div class="validate">
+                        <div class="check"><i class="fas fa-check"></i></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -68,26 +92,41 @@
             <div class="composition__rectangle"></div>
             </div>
             <div class="section__bloc">
-                <div class="container container_next_page">
-                    <div>
-                        <h3>Poulet rôti aux herbes de Provence </h3>
-                        <p>Et sa crème de truffe</p>
-                    </div>
+                <div class="container_next_page">
+                    <div class="detail_plat">
+                        <div class="toto">
+                            <h3>Filet de boeuf aux herbes</h3>
+                            <p>Accompagné de sa ribambelle de légumes</p>
+                        </div>
                     <p class="prix">40€</p>
-                </div>
-                <div class="container container_next_page">
-                    <div>
-                        <h3>Langouste rôtie</h3>
-                        <p>Et ses légumes de saison</p>
                     </div>
+                    <div class="validate">
+                        <div class="check"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="container_next_page">
+                    <div class="detail_plat">
+                        <div class="toto">
+                            <h3>Parmentier de queue de boeuf</h3>
+                            <p>À la truffe noire sur sa purée de panais</p>
+                        </div>
                     <p class="prix">35€</p>
-                </div>
-                <div class="container container_next_page">
-                    <div>
-                        <h3>Côte de boeuf Angus</h3>
-                        <p>Et sa purée de panais</p>
                     </div>
+                    <div class="validate">
+                        <div class="check"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="container_next_page">
+                    <div class="detail_plat">
+                        <div class="toto">
+                        <h3>Filet de Turbot</h3>
+                        <p>Aux agrumes</p>
+                        </div>
                     <p class="prix">44€</p>
+                    </div>
+                    <div class="validate">
+                        <div class="check"><i class="fas fa-check"></i></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -97,26 +136,41 @@
             <div class="composition__rectangle"></div>
             </div>
             <div class="section__bloc">
-                <div class="container container_next_page">
-                    <div>
-                        <h3>Farandole de desserts</h3>
-                        <p>Du chef</p>
-                    </div>
+                <div class="container_next_page">
+                    <div class="detail_plat">
+                        <div class="toto">
+                        <h3>Paris-Brest</h3>
+                        <p>Revisité</p>
+                        </div>
                     <p class="prix">18€</p>
-                </div>
-                <div class="container container_next_page">
-                    <div>
-                        <h3>Crème brulée</h3>
-                        <p>Revisitée</p>
                     </div>
+                    <div class="validate">
+                        <div class="check"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="container_next_page">
+                    <div class="detail_plat">
+                        <div class="toto">
+                        <h3>Macaron au chocolat d'exception</h3>
+                        <p>Et glace à la vanille de Madagascar</p>
+                        </div>
                     <p class="prix">22€</p>
-                </div>
-                <div class="container container_next_page">
-                    <div>
-                        <h3>Tiramisu</h3>
-                        <p>À la noisette</p>
                     </div>
-                    <p class="prix">23€</p>
+                    <div class="validate">
+                        <div class="check"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="container_next_page">
+                    <div class="detail_plat">
+                        <div class="toto">
+                        <h3>Mousse au chocolat</h3>
+                        <p>Au piment d'espelette et à la truffe noire</p>
+                        </div>
+                    <p class="prix">20€</p>
+                    </div>
+                    <div class="validate">
+                        <div class="check"><i class="fas fa-check"></i></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -138,7 +192,7 @@
             <a href="#" class="nav-link">
                 <h4>Mentions légales</h4>
             </a>
-            <a href="#" class="nav-link">
+            <a href="mailto:contact@ohmyfood.fr" class="nav-link">
                 <h4>Contact</h4>
             </a>
         </div>

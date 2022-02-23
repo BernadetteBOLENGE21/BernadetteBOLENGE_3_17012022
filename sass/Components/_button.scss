@@ -8,7 +8,7 @@
 
 .commander {
   @include mobile {
-    @include button(1px solid $color-accent, 14px);
+    @include button(1px solid transparent, 14px);
     @include degraded;
     color: $color-white;
     font-size: 16px;
@@ -17,7 +17,7 @@
   }
 
   @include tablet {
-    @include button(1px solid $color-accent, 14px);
+    @include button(1px solid transparent, 14px);
     @include degraded;
     color: $color-white;
     font-size: 16px;
@@ -27,7 +27,7 @@
     margin-top: 36px;
   }
   @include desktop {
-    @include button(1px solid $color-accent, 14px);
+    @include button(1px solid transparent, 14px);
     @include degraded;
     color: $color-white;
     font-size: 16px;
