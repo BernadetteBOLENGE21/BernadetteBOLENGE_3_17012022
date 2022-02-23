@@ -55,10 +55,28 @@ body {
 }
 
 @keyframes fade-out {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  90% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
+  }
+}
+
+@keyframes fade-outl {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }

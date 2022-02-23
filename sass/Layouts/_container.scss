@@ -120,9 +120,6 @@
   }
   //Animation au hover du container
   &:hover {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
     & > .validate {
       transform: translate(1);
       width: 110px;
@@ -133,6 +130,11 @@
     }
     & > .check {
       left: 0px;
+    }
+    & > .detail_plat {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
   }
 

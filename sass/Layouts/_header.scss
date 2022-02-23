@@ -1,17 +1,30 @@
+.loader__conteneur {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  animation: fade-outl 5s forwards;
+}
+
 .chargement {
+  background-position: center;
   border: 10px solid transparent;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  margin: auto;
   border-top: 10px solid $color-primary;
   border-bottom: 10px solid $color-tertiary;
   border-radius: 50%;
-  margin: auto;
+  position: fixed;
+  animation: fade-out 3s linear backwards, spin 3s linear infinite;
+  z-index: 2;
+  top: 0;
   left: 0;
   right: 0;
-  top: 20%;
-  position: absolute;
-  animation: fade-out 3s linear, spin 3s linear infinite;
-  opacity: 0;
+  bottom: 0;
 }
 .header {
   @include mobile {
