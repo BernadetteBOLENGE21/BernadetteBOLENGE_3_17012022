@@ -80,3 +80,18 @@ body {
     visibility: hidden;
   }
 }
+
+@keyframes fade-in2 {
+  0% {
+    opacity: 0;
+    margin-top: 25px;
+  }
+  90% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}

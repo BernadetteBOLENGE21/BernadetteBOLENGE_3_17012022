@@ -69,10 +69,11 @@
   // Début du Main relatif aux pages 2 et 5
   &.main_next_page {
     @include mobile {
+      height: 1522px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 1360px;
+
       border-radius: 50px 50px 0 0px;
       font-size: 29px;
       margin-top: -27px;
@@ -80,7 +81,6 @@
       margin-top: -45px;
     }
     @include tablet {
-      height: 79%;
       background-color: #f6f6f6;
       display: flex;
       flex-direction: column;
@@ -88,7 +88,6 @@
       margin-top: -86px;
     }
     @include desktop {
-      height: 89%;
       background-color: #f6f6f6;
       display: flex;
       flex-direction: column;
@@ -192,10 +191,8 @@
       display: flex;
       flex-direction: column;
       background-color: $color-dominant;
-      height: 30%;
     }
     @include tablet {
-      height: 27%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -203,7 +200,6 @@
       background-color: $color-dominant;
     }
     @include desktop {
-      height: 31%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -216,30 +212,27 @@
         flex-direction: column;
         margin-bottom: 20px;
       }
-      @include tablet {
-        height: 28%;
-      }
-      @include desktop {
-        height: 28%;
-      }
       .composition__rectangle {
         @include mobile {
           height: 4px;
           width: 46px;
           background-color: $color-tertiary;
           margin-left: 16px;
+          margin-bottom: 20px;
         }
         @include tablet {
           height: 4px;
           width: 46px;
           background-color: $color-tertiary;
           margin-left: 10px;
+          margin-bottom: 20px;
         }
         @include desktop {
           height: 4px;
           width: 46px;
           background-color: $color-tertiary;
           margin-left: 10px;
+          margin-bottom: 20px;
         }
       }
     }
@@ -272,26 +265,33 @@
     }
 
     &__bloc {
-      animation: fade-in 5s ease-in-out;
+      animation: fade-in2 3s;
       @include mobile {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-left: 10px;
-        height: 74%;
       }
       @include tablet {
-        height: 79%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
       @include desktop {
-        height: 69%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
+      .container_next_page--1{
+        animation:fade-in2; 
+      }
+      .container_next_page--2{
+        animation:fade-in2 100ms; 
+        animation-delay:300ms; 
+      }
+      .container_next_page--3{
+        animation:fade-in2 100ms; 
+        animation-delay:700ms; 
     }
   }
   form {
