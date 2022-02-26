@@ -1,4 +1,4 @@
-// Règles générales applicables à toutes les pages du site
+/*Règles générales applicables au body*/
 .body {
   box-sizing: border-box;
   margin: 0;
@@ -26,7 +26,7 @@ body {
   }
 }
 
-// keyframes à établir dans le fichier de base du fichier CSS
+/*keyframes à établir dans le fichier de base du fichier CSS*/
 @keyframes progress-validate {
   0% {
     transform: scaleX(0);
@@ -41,7 +41,7 @@ body {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
 }
 

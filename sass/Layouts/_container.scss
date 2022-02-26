@@ -1,3 +1,4 @@
+/*Conteneur relatif à la page d'accueil*/
 .container {
   @include mobile {
     width: 77%;
@@ -76,7 +77,7 @@
     }
   }
 }
-//Implémentation des éléments relatifs au container des pages 2 à 5
+//Conteneurs relatifs au container des pages 2 à 5
 .container_next_page {
   @include mobile {
     border: 1px solid #f6f6f6;
@@ -117,7 +118,6 @@
     box-shadow: 1px 8px 18px $color-accent;
     border-radius: 22px;
     overflow: hidden;
-    cursor: pointer;
     text-overflow: ellipsis;
     margin-bottom: 10px;
   }
@@ -129,18 +129,16 @@
       & > .check {
         left: 0px;
       }
-      & > .fas.fa-check {
-        animation: spin 2s;
+      & > i {
+        transform: rotate (360deg);
       }
     }
-
     & > .detail_plat {
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
     }
   }
-
   .detail_plat {
     @include mobile {
       display: flex;
@@ -203,45 +201,17 @@
     }
   }
   .validate {
-    @include mobile {
-      width: 0px;
-      height: 80px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #99e2d0;
-      transform: translate(0);
-      transform-origin: right;
-      transition-property: all;
-      transition-duration: 400ms;
-      transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-    @include tablet {
-      width: 0px;
-      height: 95px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $color-tertiary;
-      transform: translate(0);
-      transform-origin: right;
-      transition-property: all;
-      transition-duration: 400ms;
-      transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-    @include desktop {
-      width: 0px;
-      height: 95px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $color-tertiary;
-      transform: translate(0);
-      transform-origin: right;
-      transition-property: all;
-      transition-duration: 400ms;
-      transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
+    width: 0px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    transform: translate(0);
+    transform-origin: right;
+    transition-property: transform;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
   .check {
     position: relative;
@@ -259,18 +229,14 @@
       font-size: 14px;
     }
     @include tablet {
-      position: absolute;
       color: $color-tertiary;
+      transform: rotate (0deg);
+      transition: transform 0.6s;
+      transition-delay: 150ms;
     }
     @include desktop {
       position: absolute;
       color: $color-tertiary;
-    }
-    .fas.fa-check {
-      transform: rotate(360deg);
-      transition-property: transform 300ms ease-in-out;
-      transition-delay: 300ms;
-      transform-origin: center;
     }
   }
 }

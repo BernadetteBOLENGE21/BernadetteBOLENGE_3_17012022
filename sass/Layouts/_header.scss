@@ -1,3 +1,5 @@
+/*Header*/
+/*Animations au chargement des pages situées dans le Header*/
 .loader__conteneur {
   width: 100%;
   height: 100%;
@@ -8,7 +10,6 @@
   background-color: white;
   animation: fade-outl 3s forwards;
 }
-
 .chargement {
   background-position: center;
   border: 10px solid transparent;
@@ -39,48 +40,17 @@
     background-color: $color-dominant;
   }
   &__heading {
-    @include mobile {
-      background-color: $color-dominant;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      height: 276px;
-      align-items: center;
-      text-align: center;
-    }
-    @include tablet {
-      background-color: $color-dominant;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      height: 276px;
-      align-items: center;
-      text-align: center;
-    }
-    @include desktop {
-      background-color: $color-dominant;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      height: 276px;
-      align-items: center;
-      text-align: center;
-    }
+    background-color: $color-dominant;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 276px;
+    align-items: center;
+    text-align: center;
     p {
-      @include mobile {
-        font-size: 16px;
-        font-weight: 100;
-        width: 300px;
-      }
-      @include tablet {
-        font-size: 16px;
-        font-weight: 100;
-        width: 300px;
-      }
-      @include desktop {
-        font-size: 16px;
-        font-weight: 100;
-      }
+      font-size: 16px;
+      font-weight: 100;
+      width: 300px;
     }
   }
   &__logo {
@@ -101,58 +71,21 @@
     }
   }
   &__logo--size {
-    @include mobile {
-      width: 150px;
-      padding-top: $padding-top;
-      padding-bottom: $padding-bottom;
-    }
-    @include tablet {
-      width: 150px;
-      padding-top: $padding-top;
-      padding-bottom: $padding-bottom;
-    }
-    @include desktop {
-      width: 150px;
-      padding-top: $padding-top;
-      padding-bottom: $padding-bottom;
-    }
+    width: 150px;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
   }
 
   &__input {
-    @include mobile {
-      @include input;
-      height: 46px;
-      box-shadow: -6px 4px 3px 4px grey;
-    }
-    @include tablet {
-      @include input;
-      height: 46px;
-      box-shadow: -6px 4px 3px 4px grey;
-    }
-    @include desktop {
-      @include input;
-      height: 46px;
-      box-shadow: -6px 4px 3px 4px grey;
-    }
+    @include input;
+    height: 46px;
+    box-shadow: -6px 4px 3px 4px grey;
   }
   &__menu {
-    @include mobile {
-      height: 430px;
-      display: flex;
-      flex-direction: column;
-    }
-    @include tablet {
-      height: 430px;
-      display: flex;
-      flex-direction: column;
-    }
-    @include desktop {
-      height: 430px;
-      display: flex;
-      flex-direction: column;
-    }
+    height: 430px;
+    display: flex;
+    flex-direction: column;
   }
-  /* Cette partie correspond aux éléments du header de la page 2 à la page 5*/
   &__logo2 {
     @include mobile {
       display: flex;
@@ -184,15 +117,7 @@
     }
 
     .logo2 {
-      @include mobile {
-        width: 150px;
-      }
-      @include tablet {
-        width: 150px;
-      }
-      @include desktop {
-        width: 150px;
-      }
+      width: 150px;
     }
     i {
       @include mobile {

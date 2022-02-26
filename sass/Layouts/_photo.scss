@@ -1,41 +1,13 @@
 .photo {
-  @include mobile {
-    height: 69%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  @include tablet {
-    height: 69%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  @include desktop {
-    height: 69%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
+  height: 69%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   &__card {
-    @include mobile {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      border-radius: 22px 22px 0 0;
-    }
-    @include tablet {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      border-radius: 22px 22px 0 0;
-    }
-    @include desktop {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      border-radius: 22px 22px 0 0;
-    }
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 22px 22px 0 0;
   }
   &__nouveau {
     @include mobile {
@@ -77,24 +49,10 @@
   }
 }
 .presentation {
-  @include mobile {
-    height: 44%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  @include tablet {
-    height: 44%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  @include desktop {
-    height: 44%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  height: 44%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   &__text {
     @include mobile {
       padding-left: 10px;
@@ -118,16 +76,9 @@
   }
 
   p {
-    @include mobile {
-      margin-top: 6px;
-    }
-    @include tablet {
-      margin-top: 6px;
-    }
-    @include desktop {
-      margin-top: 6px;
-    }
+    margin-top: 6px;
   }
+  /*transition relative au coeur de la page principale*/
   i {
     font-size: 22px;
     &.fas {
