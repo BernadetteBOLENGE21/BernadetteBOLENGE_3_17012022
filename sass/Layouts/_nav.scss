@@ -1,5 +1,6 @@
 /*Navigation page d'accueil (Fonctionnement et Footer)*/
 .nav {
+  animation: fade-in2 3s;
   @include mobile {
     height: 57%;
     display: flex;

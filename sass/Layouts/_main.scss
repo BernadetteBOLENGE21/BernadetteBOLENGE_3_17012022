@@ -169,14 +169,16 @@
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         transition: transform 1000ms 100ms ease-in-out;
-        transform: scale(0.2);
+        transform: scale(0.3);
         transform-origin: center center;
         transition-duration: 400ms;
+        left: 0;
         &:hover,
         &:active {
           opacity: 1;
           z-index: 2;
-          transform: scale(1.1);
+          left: -4;
+          transform: scale(1.25);
           transform-origin: center center;
         }
         @include desktop {
@@ -236,7 +238,6 @@
         }
       }
     }
-
     h2 {
       @include mobile {
         font-size: 18px;
@@ -263,7 +264,6 @@
         padding-left: 10px;
       }
     }
-
     &__bloc {
       animation: fade-in2 3s;
       @include mobile {
@@ -282,29 +282,11 @@
         flex-direction: column;
         justify-content: space-between;
       }
-      .container_next_page--1 {
-        animation: fade-in2;
-      }
-      .container_next_page--2 {
-        animation: fade-in2 100ms;
-        animation-delay: 300ms;
-      }
-      .container_next_page--3 {
-        animation: fade-in2 100ms;
-        animation-delay: 700ms;
-      }
     }
-    form {
-      @include mobile {
-        text-align: center;
-        padding-bottom: 32px;
-      }
-      @include tablet {
-        margin: auto;
-      }
-      @include desktop {
-        margin: auto;
-      }
-    }
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -129,11 +129,12 @@
       & > .check {
         left: 0px;
       }
-      & > i {
-        transform: rotate (360deg);
+      i {
+        transform: rotate(360deg);
       }
     }
-    & > .detail_plat {
+
+    .detail_plat {
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
@@ -154,16 +155,21 @@
       justify-content: space-between;
       width: 100%;
       padding-left: 10px;
-      padding-top: 11px;
+      padding-top: 15px;
     }
     @include desktop {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
-      padding-top: 27px;
+      padding-top: 15px;
       padding-left: 10px;
     }
+  }
+  .toto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   p {
@@ -209,7 +215,7 @@
     background-color: #99e2d0;
     transform: translate(0);
     transform-origin: right;
-    transition-property: transform;
+    transition-property: all;
     transition-duration: 400ms;
     transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
@@ -227,16 +233,22 @@
       position: absolute;
       color: $color-tertiary;
       font-size: 14px;
+      transform: rotate(0deg);
+      transition: transform 0.4s ease-in-out;
+      transition-delay: 150ms;
     }
     @include tablet {
       color: $color-tertiary;
-      transform: rotate (0deg);
-      transition: transform 0.6s;
+      transform: rotate(0deg);
+      transition: transform 0.4s ease-in-out;
       transition-delay: 150ms;
     }
     @include desktop {
       position: absolute;
       color: $color-tertiary;
+      transform: rotate(0deg);
+      transition: transform 0.4s ease-in-out;
+      transition-delay: 150ms;
     }
   }
 }

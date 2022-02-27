@@ -4,6 +4,7 @@
   @include button(1px solid transparent, 12px);
   @include degraded;
   color: $color-white;
+  box-shadow: -5px 6px 9px 3px #e1dbdb;
 }
 
 .commander {
