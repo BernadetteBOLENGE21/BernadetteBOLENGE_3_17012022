@@ -67,6 +67,11 @@
       justify-content: center;
     }
   }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   &__icones {
     position: relative;
     display: flex;
@@ -76,7 +81,16 @@
   }
 
   p {
-    margin-top: 6px;
+    @include mobile {
+      margin-top: 6px;
+    }
+    @include tablet {
+      margin: 0;
+    }
+    @include desktop {
+      margin-bottom: 0;
+      margin-top: 6px;
+    }
   }
   /*transition relative au coeur de la page principale*/
   i {

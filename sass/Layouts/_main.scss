@@ -99,7 +99,7 @@
     @include mobile {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: baseline;
       font-family: "Shrikhand", cursive;
       background-color: $color-dominant;
@@ -134,9 +134,10 @@
       @include mobile {
         font-family: "Shrikhand";
         font-size: 32px;
-        width: 76%;
+        width: 77%;
         margin-bottom: 0;
         padding-top: 14px;
+        padding-left: 20px;
       }
       @include tablet {
         font-family: "Shrikhand";
@@ -146,7 +147,7 @@
       @include desktop {
         font-family: "Shrikhand";
         font-size: 32px;
-        width: 64%;
+        width: 71%;
       }
     }
     .title__icones {

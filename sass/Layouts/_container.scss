@@ -133,12 +133,6 @@
         transform: rotate(360deg);
       }
     }
-
-    .detail_plat {
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-    }
   }
   .detail_plat {
     @include mobile {
@@ -155,14 +149,12 @@
       justify-content: space-between;
       width: 100%;
       padding-left: 10px;
-      padding-top: 15px;
     }
     @include desktop {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
-      padding-top: 15px;
       padding-left: 10px;
     }
   }
@@ -171,7 +163,12 @@
     flex-direction: column;
     justify-content: center;
   }
-
+  .ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: calc(100% - 30px);
+  }
   p {
     @include mobile {
       margin-top: 6px;

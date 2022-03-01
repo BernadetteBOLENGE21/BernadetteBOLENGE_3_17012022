@@ -224,6 +224,7 @@ h2 {
   h3 {
     font-size: 16px;
     margin-bottom: 6px;
+    margin-top: 0;
   }
 }
 
@@ -855,12 +856,6 @@ a {
           transform: rotate(360deg);
 }
 
-.container_next_page:hover .detail_plat {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 @media screen and (max-width: 767px) {
   .container_next_page .detail_plat {
     display: -webkit-box;
@@ -894,7 +889,6 @@ a {
             justify-content: space-between;
     width: 100%;
     padding-left: 10px;
-    padding-top: 15px;
   }
 }
 
@@ -911,7 +905,6 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
-    padding-top: 15px;
     padding-left: 10px;
   }
 }
@@ -927,6 +920,13 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.container_next_page .ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: calc(100% - 30px);
 }
 
 @media screen and (max-width: 767px) {
@@ -1272,9 +1272,9 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1336,9 +1336,10 @@ a {
   .main__title .title {
     font-family: "Shrikhand";
     font-size: 32px;
-    width: 76%;
+    width: 77%;
     margin-bottom: 0;
     padding-top: 14px;
+    padding-left: 20px;
   }
 }
 
@@ -1354,7 +1355,7 @@ a {
   .main__title .title {
     font-family: "Shrikhand";
     font-size: 32px;
-    width: 64%;
+    width: 71%;
   }
 }
 
@@ -1896,6 +1897,19 @@ a {
   }
 }
 
+.presentation__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .presentation__icones {
   position: relative;
   display: -webkit-box;
@@ -1910,8 +1924,23 @@ a {
           justify-content: center;
 }
 
-.presentation p {
-  margin-top: 6px;
+@media screen and (max-width: 767px) {
+  .presentation p {
+    margin-top: 6px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .presentation p {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .presentation p {
+    margin-bottom: 0;
+    margin-top: 6px;
+  }
 }
 
 .presentation i {
@@ -1993,6 +2022,7 @@ a {
     font-weight: 500;
     -webkit-box-shadow: -5px 6px 9px 3px #e1dbdb;
             box-shadow: -5px 6px 9px 3px #e1dbdb;
+    margin-bottom: 80px;
   }
   .commander:hover {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9256dc));
