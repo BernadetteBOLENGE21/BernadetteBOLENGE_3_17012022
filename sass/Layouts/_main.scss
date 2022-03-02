@@ -207,13 +207,13 @@
       flex-direction: column;
       justify-content: flex-start;
       padding-left: 16px;
+      padding-right: 16px;
       background-color: $color-dominant;
     }
     &__composition {
       @include mobile {
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px;
       }
       .composition__rectangle {
         @include mobile {
@@ -280,7 +280,7 @@
       }
       @include desktop {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
       }
     }
