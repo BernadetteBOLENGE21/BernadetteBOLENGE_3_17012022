@@ -159,7 +159,15 @@
     }
 
     .logo2 {
-      width: 150px;
+      @include mobile {
+        width: 150px;
+      }
+      @include tablet {
+        width: 194px;
+      }
+      @include desktop {
+        width: 194px;
+      }
     }
     i {
       @include mobile {
