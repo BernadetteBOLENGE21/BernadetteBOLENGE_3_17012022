@@ -266,7 +266,8 @@
       }
     }
     &__bloc {
-      animation: fade-in2 3s;
+      animation: fade-in2 3s linear;
+      animation-delay: 100ms;
       @include mobile {
         display: flex;
         flex-direction: column;

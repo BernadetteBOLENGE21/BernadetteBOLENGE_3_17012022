@@ -8,7 +8,7 @@
   position: fixed;
   z-index: 1;
   background-color: white;
-  animation: fade-outl 3s forwards;
+  animation: fade-outl 3s ease-in-out forwards;
 }
 .chargement {
   background-position: center;
@@ -145,7 +145,7 @@
       height: 60px;
       padding-left: 14%;
       align-items: center;
-      width: 47%;
+      width: 50%;
       background-color: $color-dominant;
     }
     @include desktop {
@@ -155,7 +155,7 @@
       align-items: center;
       height: 60px;
       background-color: $color-dominant;
-      width: 56%;
+      width: 62%;
     }
 
     .logo2 {
