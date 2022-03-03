@@ -720,11 +720,9 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 16px;
-    padding-right: 16px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -741,6 +739,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 /*Conteneur relatif à la page d'accueil*/
@@ -811,6 +810,9 @@ a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: 1px solid transparent;
     -webkit-box-shadow: 2px 4px 9px 2px #eaeaea;
             box-shadow: 2px 4px 9px 2px #eaeaea;
@@ -2256,7 +2258,7 @@ a {
     color: #fff;
     margin-left: 10px;
     position: absolute;
-    left: 9%;
+    left: -20px;
     font-weight: bold;
   }
 }

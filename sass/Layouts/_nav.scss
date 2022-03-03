@@ -16,14 +16,13 @@
   @include desktop {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-left: 16px;
-    padding-right: 16px;
+    justify-content: space-evenly;
   }
   &_link {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: relative;
   }
 }
