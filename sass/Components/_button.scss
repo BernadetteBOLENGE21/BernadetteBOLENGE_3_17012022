@@ -5,6 +5,7 @@
   @include degraded;
   color: $color-white;
   box-shadow: -5px 6px 9px 3px #e1dbdb;
+  transition: all 1s ease;
 }
 
 .commander {

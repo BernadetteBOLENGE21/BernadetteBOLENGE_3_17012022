@@ -12,8 +12,10 @@
     font-size: 14px;
     font-weight: bold;
     background-color: $color-dominant;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 22px;
+    transition: all 100ms ease-in-out;
   }
   @include tablet {
     width: 78%;
@@ -23,15 +25,15 @@
     border: 1px solid transparent;
     box-shadow: 2px 4px 9px 2px #eaeaea;
     border-radius: 22px 22px 22px 22px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     background-color: $color-dominant;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-bottom: 22px;
+    transition: all 1s ease;
   }
   @include desktop {
-    width: 360px;
-    height: 66px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -39,17 +41,37 @@
     border: 1px solid transparent;
     box-shadow: 2px 4px 9px 2px #eaeaea;
     border-radius: 18px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     background-color: $color-dominant;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 1s ease;
   }
   &:hover {
-    background: #e4d5f6;
+    @include tablet {
+      background: #e4d5f6;
+    }
+    @include desktop {
+      background: #e4d5f6;
+    }
+    i {
+      color: $color-primary;
+    }
+  }
+  &:active {
+    @include mobile {
+      background: #e4d5f6;
+    }
+    i {
+      color: $color-primary;
+    }
   }
 
   i {
     @include mobile {
-      padding-left: 20px;
+      padding-left: 38px;
       color: grey;
     }
     @include tablet {

@@ -113,14 +113,16 @@
   }
   &__menu {
     @include mobile {
-      height: 430px;
       display: flex;
       flex-direction: column;
+      background-color: white;
+      padding-bottom: 50px;
     }
     @include tablet {
       height: 430px;
       display: flex;
       flex-direction: column;
+      background-color: white;
     }
     @include desktop {
       display: flex;
