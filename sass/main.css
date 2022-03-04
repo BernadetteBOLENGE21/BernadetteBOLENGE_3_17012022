@@ -849,13 +849,11 @@ a {
   }
 }
 
-.container:hover,
-.container :active {
+.container:hover, .container:active {
   background: #e4d5f6;
 }
 
-.container:hover i,
-.container :active i {
+.container:hover i, .container:active i {
   color: #9356DC;
 }
 
@@ -993,22 +991,22 @@ a {
   }
 }
 
-.container_next_page:hover > .validate {
+.container_next_page:hover > .validate, .container_next_page:active > .validate {
   -webkit-transform: translate(1);
           transform: translate(1);
   width: 110px;
 }
 
-.container_next_page:hover > .validate > .check {
+.container_next_page:hover > .validate > .check, .container_next_page:active > .validate > .check {
   left: 0px;
 }
 
-.container_next_page:hover > .validate i {
+.container_next_page:hover > .validate i, .container_next_page:active > .validate i {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.container_next_page:hover .ellipsis {
+.container_next_page:hover .ellipsis, .container_next_page:active .ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

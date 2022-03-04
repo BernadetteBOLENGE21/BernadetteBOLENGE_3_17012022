@@ -50,7 +50,7 @@
     transition: all 1s ease;
   }
   &:hover,
-  :active {
+  &:active {
     background: #e4d5f6;
     i {
       color: $color-primary;
@@ -144,7 +144,8 @@
     margin-bottom: 10px;
   }
   //Animation au hover du container
-  &:hover {
+  &:hover,
+  &:active {
     & > .validate {
       transform: translate(1);
       width: 110px;
