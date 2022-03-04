@@ -7,22 +7,6 @@
     height: 1982px;
   }
 }
-
-body {
-  @include mobile {
-    height: none;
-    margin: 0;
-  }
-  @include tablet {
-    height: none;
-    margin: 0;
-  }
-  @include desktop {
-    height: none;
-    margin: 0;
-  }
-}
-
 /*keyframes à établir dans le fichier de base du fichier CSS*/
 @keyframes progress-validate {
   0% {

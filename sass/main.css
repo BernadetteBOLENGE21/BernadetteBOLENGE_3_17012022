@@ -793,8 +793,8 @@ a {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 22px;
-    -webkit-transition: all 100ms ease-in-out;
-    transition: all 100ms ease-in-out;
+    -webkit-transition: all 150s ease-in-out;
+    transition: all 150s ease-in-out;
   }
 }
 
@@ -873,12 +873,12 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .container:active {
+  .container:hover {
     background: #e4d5f6;
   }
 }
 
-.container:active i {
+.container:hover i {
   color: #9356DC;
 }
 
