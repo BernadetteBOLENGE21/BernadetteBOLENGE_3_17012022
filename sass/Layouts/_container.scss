@@ -15,7 +15,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 22px;
-    transition: all 150s ease-in-out;
+    transition: all 1s ease;
   }
   @include tablet {
     width: 78%;
@@ -51,14 +51,12 @@
   }
   &:hover {
       background: #e4d5f6;
-    }
-    i {
-      color: $color-primary;
-    }
+      i {
+        color: $color-primary;
+      }
+    } 
   }
   
-  }
-
   i {
     @include mobile {
       padding-left: 38px;
