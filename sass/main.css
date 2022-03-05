@@ -937,7 +937,6 @@ a {
             box-shadow: 1px 8px 18px #EAEAEA;
     overflow: hidden;
     border-radius: 22px;
-    text-overflow: ellipsis;
     margin-bottom: 10px;
   }
 }
@@ -961,7 +960,6 @@ a {
             box-shadow: 1px 8px 18px #EAEAEA;
     border-radius: 22px;
     overflow: hidden;
-    text-overflow: ellipsis;
     margin-bottom: 10px;
   }
 }
@@ -986,8 +984,8 @@ a {
             box-shadow: 1px 8px 18px #EAEAEA;
     border-radius: 22px;
     overflow: hidden;
-    text-overflow: ellipsis;
     margin-bottom: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -1390,7 +1388,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: -86px;
+    margin-top: -66px;
   }
 }
 
@@ -1407,7 +1405,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: -86px;
+    margin-top: -66px;
   }
 }
 
@@ -1454,10 +1452,8 @@ a {
         justify-content: space-around;
     font-size: 19px;
     font-family: Roboto, sans-serif;
-    height: 6%;
     background-color: #F6F6F6;
     border-radius: 60px 60px 0 0;
-    margin-top: -47px;
   }
 }
 
@@ -1478,7 +1474,6 @@ a {
             justify-content: center;
     font-size: 19px;
     font-family: Roboto, sans-serif;
-    height: 6%;
     background-color: #F6F6F6;
     border-radius: 74px 74px 0 0;
   }
@@ -1741,6 +1736,11 @@ a {
   }
 }
 
+.main .section__bloc.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .main form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1966,7 +1966,7 @@ a {
 @media screen and (max-width: 767px) {
   .photo__nouveau {
     position: absolute;
-    left: 78%;
+    left: 72%;
     top: 12px;
     border: 1px solid #99e2d0;
     background-color: #99e2d0;

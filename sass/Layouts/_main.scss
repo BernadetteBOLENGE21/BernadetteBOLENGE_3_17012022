@@ -85,14 +85,14 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-top: -86px;
+      margin-top: -66px;
     }
     @include desktop {
       background-color: #f6f6f6;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-top: -86px;
+      margin-top: -66px;
     }
   }
   &__title {
@@ -114,10 +114,8 @@
       justify-content: space-around;
       font-size: 19px;
       font-family: Roboto, sans-serif;
-      height: 6%;
       background-color: $color-dominant;
       border-radius: 60px 60px 0 0;
-      margin-top: -47px;
     }
     @include desktop {
       display: flex;
@@ -126,7 +124,6 @@
       justify-content: center;
       font-size: 19px;
       font-family: Roboto, sans-serif;
-      height: 6%;
       background-color: $color-dominant;
       border-radius: 74px 74px 0 0;
     }
@@ -283,6 +280,9 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+      }
+      &.flex-wrap {
+        flex-wrap: wrap;
       }
     }
   }

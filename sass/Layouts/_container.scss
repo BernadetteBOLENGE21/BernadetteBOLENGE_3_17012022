@@ -113,7 +113,6 @@
     box-shadow: 1px 8px 18px $color-accent;
     overflow: hidden;
     border-radius: 22px;
-    text-overflow: ellipsis;
     margin-bottom: 10px;
   }
   @include tablet {
@@ -126,7 +125,6 @@
     box-shadow: 1px 8px 18px $color-accent;
     border-radius: 22px;
     overflow: hidden;
-    text-overflow: ellipsis;
     margin-bottom: 10px;
   }
   @include desktop {
@@ -140,8 +138,8 @@
     box-shadow: 1px 8px 18px $color-accent;
     border-radius: 22px;
     overflow: hidden;
-    text-overflow: ellipsis;
     margin-bottom: 10px;
+    margin-right: 10px;
   }
   //Animation au hover du container
   &:hover,
