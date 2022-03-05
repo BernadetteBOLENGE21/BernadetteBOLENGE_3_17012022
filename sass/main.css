@@ -992,8 +992,6 @@ a {
 }
 
 .container_next_page:hover > .validate, .container_next_page:active > .validate {
-  -webkit-transform: translate(1);
-          transform: translate(1);
   width: 110px;
 }
 

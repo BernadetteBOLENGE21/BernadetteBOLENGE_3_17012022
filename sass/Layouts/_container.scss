@@ -147,7 +147,6 @@
   &:hover,
   &:active {
     & > .validate {
-      transform: translate(1);
       width: 110px;
       & > .check {
         left: 0px;
