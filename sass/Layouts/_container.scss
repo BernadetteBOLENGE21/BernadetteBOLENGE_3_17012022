@@ -126,6 +126,7 @@
     border-radius: 22px;
     overflow: hidden;
     margin-bottom: 10px;
+    cursor: pointer;
   }
   @include desktop {
     border: 1px solid #f6f6f6;
@@ -140,6 +141,7 @@
     overflow: hidden;
     margin-bottom: 10px;
     margin-right: 10px;
+    cursor: pointer;
   }
   //Animation au hover du container
   &:hover,
