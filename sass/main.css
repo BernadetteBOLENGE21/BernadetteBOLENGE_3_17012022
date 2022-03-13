@@ -1555,16 +1555,14 @@ a {
   background: linear-gradient(to bottom right, #ff79da, #9256dc);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  -webkit-transition: -webkit-transform 1000ms 100ms ease-in-out;
-  transition: -webkit-transform 1000ms 100ms ease-in-out;
-  transition: transform 1000ms 100ms ease-in-out;
-  transition: transform 1000ms 100ms ease-in-out, -webkit-transform 1000ms 100ms ease-in-out;
+  -webkit-transition: -webkit-transform 1000ms 150ms ease-in-out;
+  transition: -webkit-transform 1000ms 150ms ease-in-out;
+  transition: transform 1000ms 150ms ease-in-out;
+  transition: transform 1000ms 150ms ease-in-out, -webkit-transform 1000ms 150ms ease-in-out;
   -webkit-transform: scale(0.3);
           transform: scale(0.3);
   -webkit-transform-origin: center center;
           transform-origin: center center;
-  -webkit-transition-duration: 400ms;
-          transition-duration: 400ms;
   left: 0;
   /*&:hover,
         &:active {

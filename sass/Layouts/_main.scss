@@ -178,10 +178,9 @@
         );
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        transition: transform 1000ms 100ms ease-in-out;
+        transition: transform 1000ms 150ms ease-in-out;
         transform: scale(0.3);
         transform-origin: center center;
-        transition-duration: 400ms;
         left: 0;
         /*&:hover,
         &:active {
