@@ -156,10 +156,18 @@
       }
     }
     .ellipsis {
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-      max-width: 150px;
+      @include mobile {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 201px;
+      }
+      @include desktop {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 238px;
+      }
     }
   }
   .detail_plat {

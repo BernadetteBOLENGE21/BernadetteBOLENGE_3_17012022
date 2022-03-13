@@ -1004,11 +1004,22 @@ a {
           transform: rotate(360deg);
 }
 
-.container_next_page:hover .ellipsis, .container_next_page:active .ellipsis {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 150px;
+@media screen and (max-width: 767px) {
+  .container_next_page:hover .ellipsis, .container_next_page:active .ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 201px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container_next_page:hover .ellipsis, .container_next_page:active .ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 238px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2102,6 +2113,7 @@ a {
 
 .presentation i.fas {
   opacity: 0;
+  top: 27px;
   position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9256dc));
   background: linear-gradient(to bottom right, #ff79da, #9256dc);
@@ -2111,18 +2123,17 @@ a {
   transition: -webkit-transform 1000ms 150ms ease-in-out;
   transition: transform 1000ms 150ms ease-in-out;
   transition: transform 1000ms 150ms ease-in-out, -webkit-transform 1000ms 150ms ease-in-out;
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-  -webkit-transform: scale(0.2);
-          transform: scale(0.2);
-  /*transition-delay: 150ms;*/
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: translate 0.4;
+          transform: translate 0.4;
 }
 
 .presentation i.fas:hover, .presentation i.fas:active {
   opacity: 1;
   z-index: 2;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: translate(1);
+          transform: translate(1);
 }
 
 #input {
