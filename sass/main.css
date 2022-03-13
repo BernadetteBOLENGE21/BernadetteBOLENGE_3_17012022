@@ -2107,10 +2107,19 @@ a {
   }
 }
 
-.presentation a:hover > i.fas,
-.presentation :active > i.fas {
+.presentation .heart:hover + i.fas, .presentation .heart:active + i.fas {
+  opacity: 1;
+  z-index: 2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.presentation i {
+  font-size: 24px;
+}
+
+.presentation i.fas {
   opacity: 0;
-  top: 27px;
   position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9256dc));
   background: linear-gradient(to bottom right, #ff79da, #9256dc);
@@ -2120,19 +2129,10 @@ a {
   transition: -webkit-transform 1000ms 150ms ease-in-out;
   transition: transform 1000ms 150ms ease-in-out;
   transition: transform 1000ms 150ms ease-in-out, -webkit-transform 1000ms 150ms ease-in-out;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
-  -webkit-transform: translate 0.4;
-          transform: translate 0.4;
-}
-
-.presentation a:hover > i.fas:hover, .presentation a:hover > i.fas:active,
-.presentation :active > i.fas:hover,
-.presentation :active > i.fas:active {
-  opacity: 1;
-  z-index: 2;
-  -webkit-transform: translate(1);
-          transform: translate(1);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
 }
 
 #input {
