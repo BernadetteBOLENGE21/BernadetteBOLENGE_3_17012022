@@ -154,6 +154,18 @@
       justify-content: center;
     }
     /*Animation du coeur à coté du titre principal des pages 2 à 5*/
+    .title__icones {
+      cursor: pointer;
+      &:hover,
+      :active {
+        & > i.fas {
+          opacity: 1;
+          z-index: 2;
+          transform: scale(1.25);
+          transform-origin: center center;
+        }
+      }
+    }
     i {
       font-size: 30px;
       &.fas {
@@ -171,13 +183,13 @@
         transform-origin: center center;
         transition-duration: 400ms;
         left: 0;
-        &:hover,
+        /*&:hover,
         &:active {
           opacity: 1;
           z-index: 2;
           transform: scale(1.25);
           transform-origin: center center;
-        }
+        }*/
         @include desktop {
           font-size: 26px;
           padding-left: 10%;

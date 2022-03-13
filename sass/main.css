@@ -1530,6 +1530,20 @@ a {
           justify-content: center;
 }
 
+.main__title .title__icones {
+  cursor: pointer;
+}
+
+.main__title .title__icones:hover > i.fas,
+.main__title .title__icones :active > i.fas {
+  opacity: 1;
+  z-index: 2;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
 .main__title i {
   font-size: 30px;
 }
@@ -1552,15 +1566,13 @@ a {
   -webkit-transition-duration: 400ms;
           transition-duration: 400ms;
   left: 0;
-}
-
-.main__title i.fas:hover, .main__title i.fas:active {
-  opacity: 1;
-  z-index: 2;
-  -webkit-transform: scale(1.25);
+  /*&:hover,
+        &:active {
+          opacity: 1;
+          z-index: 2;
           transform: scale(1.25);
-  -webkit-transform-origin: center center;
           transform-origin: center center;
+        }*/
 }
 
 @media screen and (min-width: 992px) {
